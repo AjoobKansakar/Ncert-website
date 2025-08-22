@@ -1,0 +1,47 @@
+🔹 Colors Extracted from Your Logo
+
+From the logo you uploaded, here are the main visible colors:
+
+Dark Navy Blue (main text & border) → #2A3B5F
+
+Light Blue-Grey (inner text glow) → #6C7A91
+
+Soft Red / Coral (letter “C” highlight & small icon) → #E97A7A
+
+White (background) → #FFFFFF
+
+🔹 Suggested Website Color Palette
+
+To make your website look professional, modern, and consistent, here’s a suggested combination based on your logo colors:
+
+🎨 Primary Colors (from your logo):
+
+Navy Blue (#2A3B5F) → Headings, navigation bar, footer background.
+
+Coral Red (#E97A7A) → Accent color (buttons, call-to-action, hover effects).
+
+🎨 Secondary / Support Colors:
+
+Light Grey-Blue (#F4F6FA) → Section backgrounds (gives a clean, modern look).
+
+Dark Grey (#444444) → Body text for readability.
+
+🎨 Neutral Colors:
+
+White (#FFFFFF) → Background, cards, spacing areas.
+
+Light Grey (#E5E5E5) → Borders, dividers.
+
+🔹 Example Usage in Website
+
+Navbar & Footer: Navy Blue background, White text, Coral hover effects.
+
+Hero Section: White background, Navy headline, Coral button.
+
+About/Services Section: Alternating Light Grey-Blue and White backgrounds.
+
+Call-to-Action (CTA): Coral Red button with White text → stands out strongly.
+
+
+
+https://aistudio.google.com/prompts/1Zq2rTii_kzXbwxaP8Yu4zf9vTeWKa8Cw
