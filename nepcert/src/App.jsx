@@ -3,6 +3,7 @@ import { Routes } from "react-router"
 import './App.css'
 import Header from './component/Header';
 import Hero from './component/Hero/Hero';
+import Aboutus from './component/AboutUs/aboutus';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,9 @@ function App() {
 
     {/* Hero section */}
       <Hero></Hero>
+
+    {/* Aboutus section */}
+      <Aboutus></Aboutus>
     </>
   )
 }
