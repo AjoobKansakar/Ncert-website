@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Routes } from "react-router"
 import './App.css'
 import Header from './component/Header';
-import Hero from '../component/Hero';
+import Hero from './component/Hero/Hero';
 
 function App() {
   const [count, setCount] = useState(0)

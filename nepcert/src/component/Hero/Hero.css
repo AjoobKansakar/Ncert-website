@@ -1,0 +1,102 @@
+.hero {
+    position: relative;
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* for the dark overlay so that the img and the text are visible */
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    /* z-index 2 will keep this layer above the slider which is currently at z index 1 */
+    z-index: 2; 
+}
+
+.hero-txtcontent {
+    position: relative;
+    /* z-index 3 will keep the text above the layer that we just created so 
+    z-index 1 -> the main slider
+    z-index 2 -> the layer 
+    z-index 3 -> the text contain */
+    z-index: 3;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.hero-txtcontent h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-block-end: 10px;
+    margin-bottom: 2px;
+}
+
+.hero-txtcontent .high-light{
+    color: #E97A7A;
+}
+
+.hero-txtcontent p {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-block-end: 15px;
+    margin-top: 2px;
+}
+
+.hero-txtcontent .hero-btn {
+    background-color: #E97A7A;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.hero-txtcontent .hero-btn:hover {
+    background-color: #ed5757;
+    font-size: 2.2rem;
+}
+
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin: 0;
+}
+
+.heroslider-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+

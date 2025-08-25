@@ -30,15 +30,31 @@ const Hero = () => {
         }, 5000);
 
         return () => clearInterval(interval);
-    })
-}
+    }, [slides.length]);
 
+    return (
+        <section className="hero" id="Hero">
+            <div className="hero-container">
+                <div className="hero-txtcontent">
+                    <h1> Nep <span className="high-light">C</span>ert </h1>
+                    <p> Where business meets technology </p>
+                    <button className="hero-btn"> Explore </button>
+                </div>
 
-
-{/* <div className="web-wrapper">
-    <div className="hero-section">
-        <h1> Here will be the Hero slider </h1>
-    </div>
-</div> */}
+                <figure className="hero-slider">
+                    <div className="heroslider-container">
+                        {slides.map((slide, index) => (
+                            <img key={index}
+                            src={slide.image}
+                            alt={slide.title}
+                            className={`slider-image ${index === currentSlide ? 'active' : ''}`}
+                            />
+                        ))}
+                    </div>
+                </figure>
+            </div>
+        </section>
+    );
+};
 
 export default Hero;
