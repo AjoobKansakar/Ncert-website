@@ -1,0 +1,38 @@
+.wcu {
+    background-color: #F5E0E0;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.wcu-container {
+    display: flex;
+    gap: 5%;
+}
+
+.wcu-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2A3B5F;
+}
+
+.wcu-content p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.wcu-box {
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 8px 4px #3333331a;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.wcu-box p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+}

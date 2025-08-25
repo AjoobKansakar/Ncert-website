@@ -4,6 +4,8 @@ import './App.css'
 import Header from './component/Header';
 import Hero from './component/Hero/Hero';
 import Aboutus from './component/AboutUs/aboutus';
+import Wcu from './component/WCU/wcu';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +21,9 @@ function App() {
 
     {/* Aboutus section */}
       <Aboutus></Aboutus>
+
+    {/* Why choose us section */}
+      <Wcu></Wcu>
     </>
   )
 }
