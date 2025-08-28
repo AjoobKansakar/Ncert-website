@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './product.css';
 // using React slick for slider
 import Slider from 'react-slick';
@@ -16,32 +16,38 @@ const products = [
     {
         id: 1,
         title: "Online File Server",
-        icon: OnlineFileServerIcon
+        icon: OnlineFileServerIcon,
+        description: "this is the desription..."
     },
     {
         id:2,
         title: "Online Record Management System",
-        icon: OnlineRecordManagementSystemIcon
+        icon: OnlineRecordManagementSystemIcon,
+        description: "this is the desription..."
     },
     {
         id:3,
         title: "Ekagaj System",
-        icon: EkagajSystemIcon
+        icon: EkagajSystemIcon,
+        description: "this is the desription..."
     },
     {
         id:4,
         title: "Mirco Insurance Management System (MIMS)",
-        icon: MIMSIcon
+        icon: MIMSIcon,
+        description: "this is the desription..."
     },
     {
         id:5,
         title: "Data Entry and Digitization",
-        icon: DataEntryIcon
+        icon: DataEntryIcon,
+        description: "this is the desription..."
     },
     {
         id:6,
         title: "Bill Payment System",
-        icon: BillPayIcon
+        icon: BillPayIcon,
+        description: "this is the desription..."
     }
 ];
 
@@ -69,6 +75,14 @@ const SamplePrevArrow = (props) => {
 };
 
 const Product = () => {
+    // adding a useState for the cards effect
+    const [ activeProductId, setActiveProductId ] = useState(null);
+
+    // adding the clicking effects in the card
+    const handleCardClick = (id) => {
+        setActiveProductId( activeProductId === id ? null : id );
+    };
+
     const settings = {
         dots: true,
         infinite: true,
@@ -101,29 +115,35 @@ const Product = () => {
         ]     
     };
     return (
-        //  learn this part
         <section className="products-section">
-        <div className="product-container">
-            <h2 className="section-topic"> Products & Services </h2>
-            <Slider {...settings}>
-                {products.map(product => (
-                    <div key={product.id} className="product-card-wrapper">
-                        <div className="product-card">
-                           {/* product icon */}
-                            <img 
-                                src={product.icon}
-                                alt={product.title}
-                                className="product-icons"
-                            />
+            <div className="product-container">
+                <h2 className="section-topic"> Products & Services </h2>
+                <Slider {...settings}>
+                    {products.map(product => (
+                        <div key={product.id} className="product-card-wrapper">
+                            <div 
+                            // new div for the cards effect
+                                className={`product-card ${activeProductId === product.id ? 'active' : ''}`} 
+                                onClick={() => handleCardClick(product.id)}
+                            >
+                                {/* product icon */}
+                                <img 
+                                    src={product.icon}
+                                    alt={product.title}
+                                    className="product-icons"
+                                />
 
-                            <h3>{product.title}</h3>
-                            <p>{product.description}</p>
+                                <h3>{product.title}</h3>
+                                {/* for the cards to show up */}
+                                {activeProductId === product.id && ( 
+                                    <p>{product.description}</p> 
+                                )}
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
-        </div>
-    </section>
+                    ))}
+                </Slider>
+            </div>
+        </section>
     );
 };
 

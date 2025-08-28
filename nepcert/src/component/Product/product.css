@@ -1,9 +1,14 @@
 .products-section{
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-container {
     padding: 10px 40px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .product-container .section-topic {
@@ -11,30 +16,97 @@
     font-size: 3rem;
     font-weight: 700;
     color:#2a3b5f;
+    margin-bottom: 50px;
 }
 
 .product-card-wrapper {
-    padding: 35px;
+    padding: 15px;
 }
 
 /* main product cards */
 .product-card {
-    border: 2px solid black;
+    border: none;
+    box-shadow: 1px 1px 6px 3px #a2a2a2;
     border-radius: 14px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    min-width: 400px;
-    width: 300px;
+    justify-content: flex-start;
+    margin-top: 20px;
+    min-width: 250px;
+    width: auto;
     height: 280px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* for the icons */
+.product-card .product-icons {
+    width: 80px; 
+    height: 80px; 
+    margin-bottom: 20px; 
+    transition: filter 0.4s ease-in-out; 
 }
 
 .product-card h3 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 800;
+    color: #2a3b5f;
+    margin-bottom: 15px;
+    transition: color 0.4s ease-in-out;
 }
+
+/* for product cards description */
+/* learn this tomorrow */
+
+/* ADDED: Styles for the description paragraph */
+.product-card p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555; /* Default description color */
+    opacity: 0; /* Hidden by default */
+    max-height: 0; /* Hidden by default, allows smooth transition */
+    padding: 0 10px; /* Adjust padding for description text */
+    transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out, color 0.4s ease-in-out; /* Smooth transition */
+    line-height: 1.4; /* Improve readability */
+}
+
+
+/* ADDED: Styles for the active card state */
+.product-card.active {
+    background-color: #2a3b5f; /* Dark blue background */
+    color: #fff; /* White text color for consistency */
+    height: 380px; /* UPDATED: Expanded height for description */
+    transform: translateY(-10px) scale(1.05); /* Slightly move up and enlarge */
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+}
+
+/* ADDED: Style for the icon within the active card */
+.product-card.active .product-icons {
+    filter: invert(100%); /* Invert icon color for dark background (assumes SVG) */
+    margin-bottom: 10px; /* Less space when description is shown */
+}
+
+/* ADDED: Style for heading within the active card */
+.product-card.active h3 {
+    color: #fff; /* White title text */
+    margin-bottom: 10px; /* Less space when description is shown */
+}
+
+/* ADDED: Style for the description when active */
+.product-card.active p {
+    opacity: 1; /* Make description visible */
+    max-height: 150px; /* Allow description to take height, adjust as needed */
+    color: #e0e0e0; /* Slightly off-white for description */
+}
+/*  */
+
 
 /* for the slider arrows */
 .slick-arrow,
@@ -42,6 +114,9 @@
 .slick-next {
     width: 40px !important;
     height: 40px !important;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    margin-top: 30px !important;    
 }
 
 .slick-prev:before,
@@ -49,9 +124,19 @@
  {
     font-size: 25px !important;
     position: absolute !important;
+    color: #000 !important;
     top: 5px;
     left: 6px;
 }
 
+/* for Responsive view */
+@media (max-width: 768px) {
+    .slick-prev {
+        left: 0px; 
+    }
+    .slick-next {
+        right: 0px; 
+    }
+}
 
 
