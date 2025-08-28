@@ -35,7 +35,7 @@ const products = [
 
 // for the slider Arrows
 const SampleNextArrow = (props) => {
-    const { className, style, onclick } = props;
+    const { className, style, onClick } = props;
     return (
         <div 
             className={className}
@@ -46,7 +46,7 @@ const SampleNextArrow = (props) => {
 };
 
 const SamplePrevArrow = (props) => {
-    const { className, style, onclick } = props;
+    const { className, style, onClick } = props;
     return (
         <div 
             className={className}
@@ -64,7 +64,7 @@ const Product = () => {
         slidesToShow: 3, 
         slidesToScroll: 1,
         autoplay: true,
-        autoplatSpeed: 5000,
+        autoplaySpeed: 5000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -92,7 +92,7 @@ const Product = () => {
         //  learn this part
         <section className="products-section">
         <div className="container">
-            <h2 className="text-center mb-5">Our Products & Services</h2>
+            <h2 className="text-center mb-5"> Products & Services </h2>
             <Slider {...settings}>
                 {products.map(product => (
                     <div key={product.id} className="product-card-wrapper">

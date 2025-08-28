@@ -14,7 +14,7 @@ function App() {
   return (
     // these are called fragments and it loads the components
     <> 
-    
+
     {/* Header */}
       <Header></Header>
 
