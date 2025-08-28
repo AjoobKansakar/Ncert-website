@@ -4,32 +4,44 @@ import './product.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// icons 
+import OnlineFileServerIcon from '../../assets/OnlineFileServer_icon.svg';
+import OnlineRecordManagementSystemIcon from '../../assets/Record_icon.svg';
+import EkagajSystemIcon from '../../assets/ekagaj_icon.svg';
+import MIMSIcon from '../../assets/MIMS_icon.svg';
+import DataEntryIcon from '../../assets/DataEntry_icon.svg';
+import BillPayIcon from '../../assets/Bill_icon.svg';
 
 const products = [
     {
         id: 1,
-        title: "Online File Server"
-        // iconclass: "online file server"
+        title: "Online File Server",
+        icon: OnlineFileServerIcon
     },
     {
         id:2,
-        title: "Online Record Management System"
+        title: "Online Record Management System",
+        icon: OnlineRecordManagementSystemIcon
     },
     {
         id:3,
-        title: "Ekagaj System"
+        title: "Ekagaj System",
+        icon: EkagajSystemIcon
     },
     {
         id:4,
-        title: "Mirco Insurance Management System (MIMS)"
+        title: "Mirco Insurance Management System (MIMS)",
+        icon: MIMSIcon
     },
     {
         id:5,
-        title: "Data Entry and Digitization"
+        title: "Data Entry and Digitization",
+        icon: DataEntryIcon
     },
     {
         id:6,
-        title: "Bill Payment System"
+        title: "Bill Payment System",
+        icon: BillPayIcon
     }
 ];
 
@@ -39,7 +51,7 @@ const SampleNextArrow = (props) => {
     return (
         <div 
             className={className}
-            style={{ ...style, display: "block", background: "#007bff", borderRadius: "50%" }}
+            style={{ ...style, display: "block", background: "#000000ff", borderRadius: "50%" }}
             onClick={onClick}
         />
     );
@@ -50,7 +62,7 @@ const SamplePrevArrow = (props) => {
     return (
         <div 
             className={className}
-            style={{ ...style, display: "block", background: "#007bff", borderRadius: "50%" }}
+            style={{ ...style, display: "block", background: "#000000ff", borderRadius: "50%" }}
             onClick={onClick}
         />
     );
@@ -91,14 +103,19 @@ const Product = () => {
     return (
         //  learn this part
         <section className="products-section">
-        <div className="container">
-            <h2 className="text-center mb-5"> Products & Services </h2>
+        <div className="product-container">
+            <h2 className="section-topic"> Products & Services </h2>
             <Slider {...settings}>
                 {products.map(product => (
                     <div key={product.id} className="product-card-wrapper">
                         <div className="product-card">
-                            {/* If you integrate Font Awesome, you can use the iconClass here */}
-                            {/* <i className={product.iconClass} style={{ fontSize: '3rem', marginBottom: '15px', color: '#007bff' }}></i> */}
+                           {/* product icon */}
+                            <img 
+                                src={product.icon}
+                                alt={product.title}
+                                className="product-icons"
+                            />
+
                             <h3>{product.title}</h3>
                             <p>{product.description}</p>
                         </div>
