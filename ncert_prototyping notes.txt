@@ -44,4 +44,107 @@ Call-to-Action (CTA): Coral Red button with White text → stands out strongly.
 
 
 
-https://aistudio.google.com/prompts/1Zq2rTii_kzXbwxaP8Yu4zf9vTeWKa8Cw
+
+
+html:
+   <section className="products-section">
+            <div className="container">
+                <h2 className="text-center mb-5">Our Products & Services</h2>
+                <Slider {...settings}>
+                    {products.map(product => (
+                        <div key={product.id} className="product-card-wrapper">
+                            <div className="product-card">
+                                {/* If you integrate Font Awesome, you can use the iconClass here */}
+                                {/* <i className={product.iconClass} style={{ fontSize: '3rem', marginBottom: '15px', color: '#007bff' }}></i> */}
+                                <h3>{product.title}</h3>
+                                <p>{product.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+        </section>
+    );
+};
+
+css:
+* Products.css */
+
+.products-section {
+    padding: 80px 0;
+    background-color: #f0f2f5; /* Light background */
+}
+
+.products-section h2 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.product-card-wrapper {
+    padding: 15px; /* Spacing between cards */
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    min-height: 250px; /* Ensure consistent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h3 {
+    color: #007bff; /* Primary color for titles */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Custom styling for slick dots */
+.slick-dots li button:before {
+    font-size: 10px;
+    color: #007bff; /* Active dot color */
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #007bff; /* Active dot color */
+    opacity: 1;
+}
+
+/* Custom styling for slick arrows */
+.slick-prev:before,
+.slick-next:before {
+    color: #007bff; /* Arrow color */
+    font-size: 30px; /* Adjust arrow size */
+}
+
+/* If you use custom arrows, you might need to adjust their positioning */
+.slick-prev {
+    left: -40px; /* Adjust as needed */
+    z-index: 1;
+}
+
+.slick-next {
+    right: -40px; /* Adjust as needed */
+    z-index: 1;
+}
+
+

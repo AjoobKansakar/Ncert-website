@@ -5,6 +5,7 @@ import Header from './component/Header';
 import Hero from './component/Hero/Hero';
 import Aboutus from './component/AboutUs/aboutus';
 import Wcu from './component/WCU/wcu';
+import Product from './component/Product/product';
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
 
     {/* Why choose us section */}
       <Wcu></Wcu>
+
+    {/* Product section */}
+      <Product></Product>
     </>
   )
 }
