@@ -14,6 +14,7 @@ function App() {
   return (
     // these are called fragments and it loads the components
     <> 
+    
     {/* Header */}
       <Header></Header>
 
@@ -27,7 +28,8 @@ function App() {
       <Wcu></Wcu>
 
     {/* Product section */}
-      <Product></Product>
+      <Product>  </Product>
+
     </>
   )
 }

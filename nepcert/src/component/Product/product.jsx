@@ -89,7 +89,7 @@ const Product = () => {
         ]     
     };
     return (
-        //  do from here
+        //  learn this part
         <section className="products-section">
         <div className="container">
             <h2 className="text-center mb-5">Our Products & Services</h2>
