@@ -17,37 +17,37 @@ const products = [
         id: 1,
         title: "Online File Server",
         icon: OnlineFileServerIcon,
-        description: "this is the desription..."
+        description: "It is used to store, manage and track electronic documents, This module has features like: User Management, Group Management, Content and Metadata Search, Version Management, Acess control "
     },
     {
         id:2,
         title: "Online Record Management System",
         icon: OnlineRecordManagementSystemIcon,
-        description: "this is the desription..."
+        description: "It allows user to access System from ANYWHERE, ANYTIME with an internet connection. It transforms paper documents to electronic document which can be viewed, edited, searched and distributed. It is used to track and store images of paper documents with reporting features. It provides storage, security, indexing and quick retrival capabilities. It provides means for inexpensive concurrent access to electronics copies of records currently stored as paper."
     },
     {
         id:3,
         title: "Ekagaj System",
         icon: EkagajSystemIcon,
-        description: "this is the desription..."
+        description: "It is a browser based, an imaging and Document Management System, a product designed, developed and maintained by Nep Cert Private limited is used to track and store images of paper document. It provides storage, security, as well as indexing and retrival capabilities. It is an Online imaging and Document Management System which allows user to access system from ANYWHERE, ANYTIME with an internet connection. ekagaj, an imaging and Document Management System scans and indexes your paper work comprehensively and brings savings in storage space and costs. Instead of searching for that stray documents, ekagaj enables you to retrive it on your PC and then view, edit and annotate it."
     },
     {
         id:4,
         title: "Mirco Insurance Management System (MIMS)",
         icon: MIMSIcon,
-        description: "this is the desription..."
+        description: "(MIMS) is product designed and developed by Nep Cert Private Limited to manage the Mirco Insurance System. It has capability to manage:- Generic application - Mirco Insurance products and thier benefit packages - Members and dependents/beneficiaries, - Various process like enrolments, collections, entitlement, to benefits, claims settlement, management of cash Flows etc."
     },
     {
         id:5,
         title: "Data Entry and Digitization",
         icon: DataEntryIcon,
-        description: "this is the desription..."
+        description: "..."
     },
     {
         id:6,
         title: "Bill Payment System",
         icon: BillPayIcon,
-        description: "this is the desription..."
+        description: "..."
     }
 ];
 
