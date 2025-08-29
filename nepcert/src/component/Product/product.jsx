@@ -41,13 +41,13 @@ const products = [
         id:5,
         title: "Data Entry and Digitization",
         icon: DataEntryIcon,
-        description: "..."
+        description: ""
     },
     {
         id:6,
         title: "Bill Payment System",
         icon: BillPayIcon,
-        description: "..."
+        description: ""
     }
 ];
 

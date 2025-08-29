@@ -104,7 +104,24 @@
 .product-card.active p {
     opacity: 1;
     max-height: 150px; 
+    height: 100%; 
     color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    text-align: justify;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.product-card.active p::-webkit-scrollbar {
+    display: block;
 }
 
 /* for the slider dots */
