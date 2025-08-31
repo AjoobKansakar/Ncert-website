@@ -115,7 +115,7 @@ const Product = () => {
         ]     
     };
     return (
-        <section className="products-section">
+        <section className="products-section" id="Products">
             <div className="product-container">
                 <h2 className="section-topic"> Products & Services </h2>
                 <Slider {...settings}>

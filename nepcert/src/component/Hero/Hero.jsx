@@ -33,7 +33,7 @@ const Hero = () => {
     }, [slides.length]);
 
     return (
-        <section className="hero" id="Hero">
+        <section className="hero" id="HeroSection">
             <div className="hero-container">
                 <div className="hero-txtcontent">
                     <h1> Nep <span className="high-light">C</span>ert </h1>

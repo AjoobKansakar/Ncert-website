@@ -5,7 +5,7 @@ import Aboutusimg from "../../assets/about_us_img.png";
 function Aboutus () {
     return (
         <div className="web-wrapper">
-            <div className="aboutus">
+            <div className="aboutus" id="AboutUs">
                 <div className="aboutus-content">
                     <h1> About us </h1>
                     <h2> Smart solutions for growing businesses! </h2>

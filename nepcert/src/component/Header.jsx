@@ -10,8 +10,8 @@ function Header () {
                         <img src={NepcertLogo} alt="Nepcert logo" id="nepcert-logo"/>
                     </a>
                     <nav className="Nav-items">
-                        <a href="#">About us</a>
-                        <a href="#">Products</a>
+                        <a href="#AboutUs">About us</a>
+                        <a href="#Products">Products</a>
                         <a href="#">Services</a>
                         <a href="#">Mission Statement</a>
                         <button className="contact-usbtn">Contact us</button>
