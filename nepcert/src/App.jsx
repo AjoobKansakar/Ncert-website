@@ -6,6 +6,7 @@ import Hero from './component/Hero/Hero';
 import Aboutus from './component/AboutUs/aboutus';
 import Wcu from './component/WCU/wcu';
 import Product from './component/Product/product';
+import Services from './component/OurServices/services';
 
 
 function App() {
@@ -28,7 +29,10 @@ function App() {
       <Wcu></Wcu>
 
     {/* Product section */}
-      <Product>  </Product>
+      <Product> </Product>
+
+    {/* Our Services section */}
+     <Services> </Services>
 
     </>
   )

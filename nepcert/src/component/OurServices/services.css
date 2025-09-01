@@ -1,0 +1,63 @@
+.services {
+    background-color: #F5E0E0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.service-container {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.service-data {
+    text-align: center;
+    width: 50%;
+}
+
+.service-data h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2A3B5F;
+}
+
+.service-data p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.services-present {
+    flex: 1;
+    height: 500px;
+    position: relative;
+}
+
+.services-present h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2A3B5F;
+}
+
+.dataentry,
+.billpayment {
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 4px #3333331a;
+    border-radius: 12px;
+    margin-top: 15%;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.dataentry:hover,
+.billpayment:hover {
+    transform: scaleX(1.02);
+}
+
+
