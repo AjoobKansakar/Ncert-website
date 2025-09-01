@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './services.css';
 // icons
 import DataEntryIcon from '../../assets/DataEntry_icon.svg';
@@ -6,6 +6,13 @@ import BillPayIcon from '../../assets/Bill_icon.svg';
 
 
 function Services () {
+
+    const [ activeIndex, setActiveIndex] = useState(null);
+    
+    const handleCardClick = (id) => {
+        setActiveIndex (prevIndex => (prevIndex === id ? null : id));
+    }; 
+    
     const Servicesitems = [
         {
             id: 1,
@@ -35,6 +42,13 @@ function Services () {
                     <div className="services-present">
                         {/* mapping for flip card effect */}
                         {Servicesitems.map(service => (
+                            // card onclick flip feature
+                        <div 
+                                key={service.id}
+                                className={`service-card-wrapper ${activeIndex === service.id ? 'active' : ''}`}
+                                onClick={() => handleCardClick(service.id)}
+                        >
+
                             <div key={service.id} className='service-card-wrapper'>
                                 <div className='service-card'>
                                     {/* front face of the card */}
@@ -48,6 +62,7 @@ function Services () {
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         ))}
                     </div>
                 </div>
