@@ -6,6 +6,21 @@ import BillPayIcon from '../../assets/Bill_icon.svg';
 
 
 function Services () {
+    const Servicesitems = [
+        {
+            id: 1,
+            title: "Data Entry and digitization",
+            icon: DataEntryIcon,
+            description: " No Description yet..."
+        },
+        {
+            id: 2,
+            title: "Bill Payment System",
+            icon: BillPayIcon,
+            description: " No Description yet...."
+        }
+    ];
+
     return (
 
         <section className="services" id='services'>
@@ -18,21 +33,27 @@ function Services () {
                     </div>
 
                     <div className="services-present">
-                        <div className="dataentry">
-                            <img src={DataEntryIcon} alt='dataentry-icon' id='DE-icon'></img>
-                            <h2> Data Entry & Digitization </h2>
-                        </div>
-
-                        <div className="billpayment">
-                            <img src={BillPayIcon} alt='billpay-icon' id='BP-icon'></img>
-                            <h2> Bill Payment System </h2>
-                        </div>
-
+                        {/* mapping for flip card effect */}
+                        {Servicesitems.map(service => (
+                            <div key={service.id} className='service-card-wrapper'>
+                                <div className='service-card'>
+                                    {/* front face of the card */}
+                                    <div className="service-card-front">
+                                        <img src={service.icon} alt={`${service.title} icon`} className='service-icon'></img>
+                                        <h2> {service.title} </h2>
+                                    </div>
+                                    {/* back face of the card */}
+                                    <div className="service-card-back">
+                                        <p> {service.description} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </section>
     )
-}
+};
 
 export default Services
