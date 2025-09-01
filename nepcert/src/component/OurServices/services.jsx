@@ -12,7 +12,7 @@ function Services () {
     const handleCardClick = (id) => {
         setActiveIndex (prevIndex => (prevIndex === id ? null : id));
     }; 
-    
+
     const Servicesitems = [
         {
             id: 1,
@@ -43,26 +43,19 @@ function Services () {
                         {/* mapping for flip card effect */}
                         {Servicesitems.map(service => (
                             // card onclick flip feature
-                        <div 
+                            <div
                                 key={service.id}
-                                className={`service-card-wrapper ${activeIndex === service.id ? 'active' : ''}`}
+                                className={`service-card ${activeIndex === service.id ? 'active' : ''}`} 
                                 onClick={() => handleCardClick(service.id)}
-                        >
-
-                            <div key={service.id} className='service-card-wrapper'>
-                                <div className='service-card'>
-                                    {/* front face of the card */}
-                                    <div className="service-card-front">
-                                        <img src={service.icon} alt={`${service.title} icon`} className='service-icon'></img>
-                                        <h2> {service.title} </h2>
-                                    </div>
-                                    {/* back face of the card */}
-                                    <div className="service-card-back">
-                                        <p> {service.description} </p>
-                                    </div>
+                            >
+                                <div className="service-card-front"> 
+                                    <img src={service.icon} alt={`${service.title} icon`} className='service-icon'></img>
+                                    <h2> {service.title} </h2>
+                                </div>
+                                <div className="service-card-description"> 
+                                    <p> {service.description} </p>
                                 </div>
                             </div>
-                        </div>
                         ))}
                     </div>
                 </div>
