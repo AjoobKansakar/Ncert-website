@@ -13,7 +13,7 @@ function Header () {
                         <a href="#AboutUs">About us</a>
                         <a href="#Products">Products</a>
                         <a href="#services">Services</a>
-                        <a href="#">Mission Statement</a>
+                        <a href="#MissionStatement">Mission Statement</a>
                         <button className="contact-usbtn">Contact us</button>
                     </nav>
                 </div>
