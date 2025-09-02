@@ -27,6 +27,7 @@ function Clients () {
         { id: 7, name: 'Client 7', logo: Client7},
         { id: 8, name: 'Client 8', logo: Client8}
     ]; 
+    
     const settings = {
         dots: false,
         infinite: true,
@@ -34,8 +35,9 @@ function Clients () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         cssEase: "linear",
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1024,

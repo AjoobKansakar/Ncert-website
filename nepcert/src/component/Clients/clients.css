@@ -1,0 +1,27 @@
+.Clients {
+    background-color: #F5E0E0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.Clients h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2a3b5f;
+    text-align: center;
+}
+
+/* for logos box */
+.client-slide {
+    width: 300px;
+    height: auto;
+}
+
+.client-slide img {
+    width: 240px;
+    height: 100px;
+    object-fit: fill;
+}
+
