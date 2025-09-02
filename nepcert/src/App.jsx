@@ -10,6 +10,7 @@ import Wcu from './component/WCU/wcu';
 import Product from './component/Product/product';
 import Services from './component/OurServices/services';
 import Mission from './component/MissionStatement/Mission';
+import Clients from './component/Clients/clients';
 
 
 function App() {
@@ -39,7 +40,11 @@ function App() {
 
     {/*  Mission Statement section */}
       <Mission></Mission>
+
+    {/* Client Section */}
+     <Clients> </Clients>
     </>
+
   )
 }
 
