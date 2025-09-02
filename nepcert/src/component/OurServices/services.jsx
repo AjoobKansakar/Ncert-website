@@ -18,13 +18,13 @@ function Services () {
             id: 1,
             title: "Data Entry and digitization",
             icon: DataEntryIcon,
-            description: " No Description yet..."
+            description: " Nep Cert has been carrying out data entry and imaging service for various organizations with hardware and man power for Global IME Bank, Laxmi Sunrise Bank Limited, American Life Insurance Company."
         },
         {
             id: 2,
             title: "Bill Payment System",
             icon: BillPayIcon,
-            description: " No Description yet...."
+            description: " Nep Cert Private Limited has managed to maintain the billing system for Nepal Telecom for past 9 years. A group of Staffs are dedicated for all the electricity bill generated for the Mobile BTS tower of Bagmati zone and periphery including remote regions are managed, paid and recorded in the Bill Payment System developed."
         }
     ];
 
