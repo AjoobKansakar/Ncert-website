@@ -53,18 +53,18 @@ body {
 }
 
 .contact-usbtn {
-  margin-top: 13px;
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: transparent;
-  padding: 6px;
+  border: 1px solid #2a3b5f;
+  color: #2a3b5f;
   border-radius: 20px;
-  color: #2A3B5F;
-  transition: all 0.2s ease-in;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
 }
 
 .contact-usbtn:hover {
-  transform: scale(1.01);
-  background-color: #E97A7A;
   color: #fff;
+  background-color: #E97A7A;
+  border: none;
 }
+
