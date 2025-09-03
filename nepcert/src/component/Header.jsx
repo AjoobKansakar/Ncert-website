@@ -14,8 +14,8 @@ function Header () {
                         <a href="#Products">Products</a>
                         <a href="#services">Services</a>
                         <a href="#MissionStatement">Mission Statement</a>
-                        <button className="contact-usbtn">Contact us</button>
                     </nav>
+                        <a role="button" href="#Contact-us" className="contact-usbtn"> Contact Us </a>
                 </div>
             </div>
         </header>
