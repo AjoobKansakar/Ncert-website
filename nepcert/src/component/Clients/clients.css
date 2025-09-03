@@ -1,9 +1,11 @@
 .Clients {
     background-color: #F5E0E0;
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     height: 50vh;
+    padding: 20px 0;
 }
 
 .Clients h1 {
@@ -11,17 +13,59 @@
     font-weight: bold;
     color: #2a3b5f;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 /* for logos box */
 .client-slide {
-    width: 300px;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .client-slide img {
-    width: 240px;
-    height: 100px;
-    object-fit: fill;
+    max-width: 180px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .Clients h1 {
+        font-size: 2.5rem;
+    }
+    .client-slide {
+        height: 120px;
+    }
+    .client-slide img {
+        max-width: 150px;
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .client-slide {
+        height: 120px;
+    }
+    .client-slide img {
+        max-width: 150px;
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 430px) {
+    .client-slide {
+        height: 100px;
+    }
+    .client-slide img {
+        max-width: 120px;
+        max-height: 70px;
+    }
 }
 
