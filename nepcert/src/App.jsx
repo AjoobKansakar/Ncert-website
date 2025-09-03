@@ -11,6 +11,7 @@ import Product from './component/Product/product';
 import Services from './component/OurServices/services';
 import Mission from './component/MissionStatement/Mission';
 import Clients from './component/Clients/clients';
+import ContactUs from './component/ContactUs/ContactUs';
 
 
 function App() {
@@ -43,8 +44,10 @@ function App() {
 
     {/* Client Section */}
      <Clients> </Clients>
-    </>
 
+    {/* Contact Us Section */}
+      <ContactUs> </ContactUs>
+    </>
   )
 }
 

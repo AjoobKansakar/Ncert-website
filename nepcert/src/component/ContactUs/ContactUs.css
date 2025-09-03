@@ -1,0 +1,10 @@
+.Contact-us {
+    min-height: 100vh;
+}
+.contact-us-banner {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a3b5f;
+    text-align: center;
+    border: 2px solid red;
+}
