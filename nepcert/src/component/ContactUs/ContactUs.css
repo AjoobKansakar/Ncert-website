@@ -76,8 +76,23 @@
     color: #2A3B5F;
 }
 
+.get-in-touch h3 {
+    color: #2A3B5F;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.get-in-touch p {
+    color: #2A3B5F;
+    font-size: 0.9rem;
+}
+
 .contact-us-form {
     flex: 1;
     border: 1px solid black;
-    text-align: center;
+}
+
+.contact-us-form h2 {
+    font-size: 1.5rem;
+    margin-left: 20px;
 }
