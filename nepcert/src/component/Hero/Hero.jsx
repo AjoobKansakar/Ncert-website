@@ -38,7 +38,7 @@ const Hero = () => {
                 <div className="hero-txtcontent">
                     <h1> Nep <span className="high-light">C</span>ert </h1>
                     <p> Where business meets technology </p>
-                    <button className="hero-btn"> Explore </button>
+                    <a role="button" href="#AboutUs" className="hero-btn"> Explore </a>
                 </div>
 
                 <figure className="hero-slider">

@@ -63,6 +63,7 @@
     font-weight: bold;
     font-size: 2rem;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .hero-txtcontent .hero-btn:hover {
