@@ -3,9 +3,7 @@ import './ContactUs.css';
 import ClientBannerImg from '../../assets/ContactBanner_img.jpg';
 // icons from fontawesome 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function ContactUs () {
     return (
@@ -17,20 +15,44 @@ function ContactUs () {
 
             <div className="web-wrapper">
                 <div className="Contact-form-section">
+                    {/* Info */}
                     <div className="get-in-touch">
                         <h2> Get in touch </h2>
-                        <h3> <FontAwesomeIcon icon={ faLocationDot } style={{color: "#2A3B5F",}} /> Office </h3>
-                        <p> Kumaripati, Lalitpur </p>
-
-                        <h3> <FontAwesomeIcon icon={ faEnvelope } style={{color: "#2A3B5F",}} /> Email </h3>
-                        <p> info@nepcert.com </p>
-
-                        <h3> <FontAwesomeIcon icon={ faPhone } style={{color: "#2A3B5F",}} /> Contact </h3>
-                        <p> +977-9847395310 </p>
+                        {/* location */}
+                        <div className="Contact-info-items">
+                            <FontAwesomeIcon icon={ faLocationDot } className="Contact-icons" />
+                            <div>
+                                <h3>  Office </h3>
+                                <p> Kumaripati, Lalitpur </p>
+                            </div>
+                        </div>
+                        {/* Mail */}
+                        <div className="Contact-info-items">
+                            <FontAwesomeIcon icon={ faEnvelope } className="Contact-icons" />
+                            <div>
+                                <h3> Email </h3>
+                                <p> info@nepcert.com </p>
+                            </div>
+                        </div>
+                        {/* Number */}
+                        <div className="Contact-info-items">
+                            <FontAwesomeIcon icon={ faPhone } className="Contact-icons" />
+                            <div>
+                                <h3>  Contact </h3>
+                                <p> +977-9847395310 </p>
+                            </div>
+                        </div>
                     </div>
-
+                    {/* Form */}
                     <div className="contact-us-form">
                         <h2> Send us a message: </h2>
+                        <form>
+                            <input type="text" placeholder=" Your Name "></input>
+                            <input type="email" placeholder=" Your Email "></input>
+                            <input type="text" placeholder=" Subject "></input>
+                            <textarea placeholder=" Type your message here..."></textarea>
+                            <button type="submit"> Send Message </button>
+                        </form>
                     </div>
                 </div>
             </div>
