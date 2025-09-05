@@ -3,7 +3,7 @@ import NepcertLogo from '../assets/Nepcert Logo.png';
 
 function Header () {
     return (
-        <header>
+        <header id="header">
             <div className="web-wrapper">
                 <div className="nav-bar">
                     <a href="#" className="logo">
