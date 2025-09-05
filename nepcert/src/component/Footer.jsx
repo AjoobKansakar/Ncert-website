@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
+import { faGreaterThan, faLocationDot, faEnvelope, faPhone  } from '@fortawesome/free-solid-svg-icons';
 
 function Footer () {
     return (
@@ -21,10 +21,24 @@ function Footer () {
                 </div>
 
                 <div className="Services-link">
+                    <h2> Our Services </h2>
                     <ul>
-                        <li> Data Entry & Digitization </li>
-                        <li> Bill Payment System </li>
+                        <li> <FontAwesomeIcon icon={ faGreaterThan } style={{color: "#000000",}} /> Data Entry & Digitization </li>
+                        <li> <FontAwesomeIcon icon={ faGreaterThan } style={{color: "#000000",}} /> Bill Payment System </li>
                     </ul>
+                </div>
+
+                <div className="information-links">
+                    <h2> Information </h2>
+                    <ul>
+                        <li> <FontAwesomeIcon icon={ faPhone } style={{color: "#000000",}} /> +977 984-7395310 </li>
+                        <li> <FontAwesomeIcon icon={ faEnvelope } style={{color: "#000000",}} /> info@nepcert.com </li>
+                        <li> <FontAwesomeIcon icon={ faLocationDot } style={{color: "#000000",}} /> Kumaripati, Lalitpur </li>
+                    </ul>
+                </div>
+
+                <div className="copyright">
+                    <p> © Copyright NEP CERT Private Limited. All Rights Reserved </p>
                 </div>
             </div>
         </footer>
