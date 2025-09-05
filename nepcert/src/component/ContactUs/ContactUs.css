@@ -57,7 +57,7 @@
     margin: 0 auto;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 2px 4px 15px #0000001a;
+    box-shadow: 2px 4px 14px #0000001a;
     padding: 40px;
     position: relative;
     z-index: 2;
@@ -176,6 +176,16 @@
 .contact-us-form button:hover {
     background-color: #e06c7e;
     font-weight: bold;
+}
+
+/* Map */
+.location-map iframe {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 450px;
+    opacity: 0.8;
+    border: none;
 }
 
 /* Responsive */

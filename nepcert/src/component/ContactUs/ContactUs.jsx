@@ -62,12 +62,15 @@ function ContactUs () {
                     </div>
                 </div>
 
-                <div className="location-map">
-                    {/* Map */}
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.532162937167!2d85.31783187532233!3d27.6699426762041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb194c81a5a83b%3A0x8a5b75a5abd0463e!2sNEP%20CERT%20PVT%20LTD!5e0!3m2!1sen!2snp!4v1757061859246!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
             </div>
 
+            {/* Map */}
+            <div className="location-map">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.532162937167!2d85.31783187532233!3d27.6699426762041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb194c81a5a83b%3A0x8a5b75a5abd0463e!2sNEP%20CERT%20PVT%20LTD!5e0!3m2!1sen!2snp!4v1757061859246!5m2!1sen!2snp" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </section>
     )
 }
