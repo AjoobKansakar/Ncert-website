@@ -12,6 +12,7 @@ import Services from './component/OurServices/services';
 import Mission from './component/MissionStatement/Mission';
 import Clients from './component/Clients/clients';
 import ContactUs from './component/ContactUs/ContactUs';
+import Footer from './component/Footer';
 
 
 function App() {
@@ -47,6 +48,9 @@ function App() {
 
     {/* Contact Us Section */}
       <ContactUs> </ContactUs>
+
+    {/* Footer */}
+      <Footer> </Footer>
     </>
   )
 }
