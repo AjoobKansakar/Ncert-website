@@ -70,6 +70,51 @@ body {
 
 /* Footer css */
 .footer {
-  background-color: green;
+  min-height: 60vh;
+  background-color: #000;
+  color: #fff;
 }
+
+.footer h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.footer span {
+  color: #E97A7A;
+}
+
+.all-links {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  transition: color 0.3s ease-in;
+}
+
+.all-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.all-links li {
+  line-height: 30px;
+}
+
+.all-links li:hover {
+  color: #ffff00;
+}
+
+.all-links li:hover .fa-icon,
+.all-links li:hover svg {
+  color: #ffff00;
+}
+
+
+.copyright {
+  text-align: center;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
 
