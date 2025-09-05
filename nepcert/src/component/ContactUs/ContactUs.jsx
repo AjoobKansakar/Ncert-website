@@ -20,25 +20,31 @@ function ContactUs () {
                         <h2> Get in touch </h2>
                         {/* location */}
                         <div className="Contact-info-items">
-                            <FontAwesomeIcon icon={ faLocationDot } className="Contact-icons" />
-                            <div>
+                            <div className="contact-info">
+                                <FontAwesomeIcon icon={ faLocationDot } className="Contact-icons" />
                                 <h3>  Office </h3>
+                            </div>
+                            <div className="contact-data">
                                 <p> Kumaripati, Lalitpur </p>
                             </div>
                         </div>
                         {/* Mail */}
                         <div className="Contact-info-items">
-                            <FontAwesomeIcon icon={ faEnvelope } className="Contact-icons" />
-                            <div>
+                            <div className="contact-info">
+                                <FontAwesomeIcon icon={ faEnvelope } className="Contact-icons" />
                                 <h3> Email </h3>
+                            </div>
+                            <div className="contact-data">
                                 <p> info@nepcert.com </p>
                             </div>
                         </div>
                         {/* Number */}
                         <div className="Contact-info-items">
-                            <FontAwesomeIcon icon={ faPhone } className="Contact-icons" />
-                            <div>
+                            <div className="contact-info">
+                                <FontAwesomeIcon icon={ faPhone } className="Contact-icons" />
                                 <h3>  Contact </h3>
+                            </div>
+                            <div className="contact-data">
                                 <p> +977-9847395310 </p>
                             </div>
                         </div>
