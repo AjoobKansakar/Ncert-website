@@ -40,6 +40,7 @@ function Footer () {
                 <div className="copyright">
                     <p> © Copyright NEP CERT Private Limited. All Rights Reserved </p>
                 </div>
+                
             </div>
         </footer>
     )
