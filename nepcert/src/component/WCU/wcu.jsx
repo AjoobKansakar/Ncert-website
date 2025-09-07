@@ -30,5 +30,5 @@ function Wcu () {
     )
 }
 
-export default Wcu
+export default Wcu;
 

@@ -15,8 +15,8 @@ function Footer () {
                             <li> <a href="#AboutUs"> <FontAwesomeIcon icon={ faGreaterThan } /> About us </a></li>
                             <li> <a href="#Products"> <FontAwesomeIcon icon={ faGreaterThan } /> Products </a></li>
                             <li> <a href="#services"> <FontAwesomeIcon icon={ faGreaterThan } /> Services </a> </li>
-                            <li> <a href="#Contact-us"> <FontAwesomeIcon icon={ faGreaterThan } /> Contact us </a></li>
                             <li> <a href="#MissionStatement"> <FontAwesomeIcon icon={ faGreaterThan } /> Mission Statements</a></li>
+                            <li> <a href="#Contact-us"> <FontAwesomeIcon icon={ faGreaterThan } /> Contact us </a></li>
                         </ul>
                 </div>
 
@@ -47,4 +47,4 @@ function Footer () {
     )
 }
 
-export default Footer
+export default Footer;
