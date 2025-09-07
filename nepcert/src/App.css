@@ -21,6 +21,15 @@ body {
 
 /* Header Css */
 
+#header {
+  /* allows Header/navigation bar to stick at the top when scrolling */
+  position: sticky; 
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 1px 1px 12px;
+}
+
 #nepcert-logo{
   width: 100%;
   height: 80px;
