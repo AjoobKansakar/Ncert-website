@@ -2,6 +2,34 @@ import React from "react";
 import NepcertLogo from '../assets/Nepcert Logo.png';
 
 function Header () {
+// Array of Nav-bar
+const navbar = [
+    {
+        id: 1,
+        title: "About us",
+        slug:"AboutUs"
+    },
+    {
+        id: 2,
+        title: "Products",
+        slug:"Products"
+    },
+    {
+        id: 3,
+        title: "Services",
+        slug:"services"
+    },
+    {
+        id: 4,
+        title: "Mission Statement",
+        slug:"MissionStatement"
+    },
+]
+// array for Nav-bar button
+const contact = [
+    { id: 1, title: "Contact me", slug: "Contact-us"}
+]
+
     return (
         <header id="header">
             <div className="web-wrapper">
@@ -10,12 +38,23 @@ function Header () {
                         <img src={NepcertLogo} alt="Nepcert logo" id="nepcert-logo"/>
                     </a>
                     <nav className="Nav-items">
-                        <a href="#AboutUs">About us</a>
-                        <a href="#Products">Products</a>
-                        <a href="#services">Services</a>
-                        <a href="#MissionStatement">Mission Statement</a>
+                        {
+                            navbar.map((nav)=>{
+                                return(
+                                    <a key={nav.id} href={`#${nav.slug}`}>{nav.title}</a>
+                                )
+                            })
+                        } 
                     </nav>
-                        <a role="button" href="#Contact-us" className="contact-usbtn"> Contact Us </a>
+                    <div className="nav-button">
+                        {
+                            contact.map((button) => {
+                                return (
+                                    <a role="button" className="contact-usbtn" key={button.id} href={`#${button.slug}`}>{button.title}</a>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
         </header>
