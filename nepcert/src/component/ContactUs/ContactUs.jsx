@@ -53,10 +53,10 @@ function ContactUs () {
                     <div className="contact-us-form">
                         <h2> Send us a message: </h2>
                         <form>
-                            <input type="text" placeholder=" Your Name "></input>
-                            <input type="email" placeholder=" Your Email "></input>
-                            <input type="text" placeholder=" Subject "></input>
-                            <textarea placeholder=" Type your message here..."></textarea>
+                            <input type="text" required placeholder=" Your Name "></input>
+                            <input type="email" required placeholder=" Your Email "></input>
+                            <input type="text" required placeholder=" Subject "></input>
+                            <textarea required placeholder=" Type your message here..."></textarea>
                             <button type="submit"> Send Message </button>
                         </form>
                     </div>
