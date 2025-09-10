@@ -2,7 +2,7 @@ import React from "react";
 import './aboutus.css';
 import Aboutusimg from "../../assets/about_us_img.png";
 
-function Aboutus () {
+function Aboutus () {    
     return (
         <div className="web-wrapper">
             <div className="aboutus" id="AboutUs">
