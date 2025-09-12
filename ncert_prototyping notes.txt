@@ -148,3 +148,41 @@ css:
 }
 
 
+
+    const menu = [
+        {
+            id: 1,
+            title: "About us",
+            slug:"AboutUs"
+        },
+        {
+            id: 2,
+            title: "Products",
+            slug:"Products"
+        },
+        {
+            id: 3,
+            title: "Services",
+            slug:"services"
+        },
+        {
+            id: 4,
+            title: "Services",
+            slug:"services"
+        },
+        
+    ]
+
+
+                    <nav className="Nav-items">
+                        {
+                            menu.map((m)=>{
+                                return(
+                                    <a href={`#${m.slug}`}>{m.title}</a>
+                                )
+                            })
+                        }
+                        
+                        
+                    </nav>
+

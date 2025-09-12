@@ -21,130 +21,161 @@ body {
 
 /* Header Css */
 
-#header {
-  /* allows Header/navigation bar to stick at the top when scrolling */
-  position: sticky; 
-  top: 0;
-  background-color: #fff;
-  z-index: 100;
-  box-shadow: 1px 2px 12px;
-}
-
-#nepcert-logo{
-  width: 100%;
-  height: 80px;
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.Nav-items {
-  margin-left: 24%;
-  display: flex;
-  align-items: center;
-}
-
-.Nav-items a {
-  text-decoration: none;
-  color: #000;
-  padding: 15px;
-  font-weight: 700;  
-  font-size: 1rem;
-  transition: all 0.1s ease-in;
-}
-
-.Nav-items a:hover {
-  text-decoration: underline;
-  color: #E97A7A;
-}
-
-.nav-button {
-  margin-left: auto;
-  padding-left: 15px;
-}
-
-.contact-usbtn {
-  border: 1px solid #2a3b5f;
-  color: #2a3b5f;
-  border-radius: 20px;
-  padding: 16px;
-  text-decoration: none;
-  font-weight: bold;
-  white-space: nowrap;
-  transition: all 0.3s ease-in;
-}
-
-.contact-usbtn:hover {
-  color: #fff;
-  background-color: #E97A7A;
-  border: none;
-}
-
-.hamburger-menu {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #2a3b5f;
-  margin-left: auto;
-  padding-right: 20px;
-}
-
-/* Responsive for header */
-@media (max-width: 768px) {
-
-  .nav-bar{
-    justify-content: space-between;
-    padding: 0 20px;
+  #header {
+    /* allows Header/navigation bar to stick at the top when scrolling */
+    position: sticky; 
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: 0px 2px 5px;
   }
 
-  #nepcert-logo {
-    height: 60px;
+  #nepcert-logo{
     width: auto;
+    height: 80px;
   }
 
-  /* to show hamburger menu in smaller screens */
-  .hamburger-menu {
-    display: block;
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
   }
 
   .Nav-items {
-    display: none;
-  }
-
-  .Nav-items.Open{
     display: flex;
+    align-items: center;
   }
 
-  .Nav-items a{
-    padding: 12px 20px;
-    width: 100%;
-    box-sizing: border-box;
+  .Nav-items a {
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+    font-weight: 700;  
+    font-size: 1rem;
+    transition: all 0.1s ease-in;
   }
 
   .Nav-items a:hover {
-    background-color: #f0f0f0;
+    text-decoration: underline;
+    color: #E97A7A;
   }
 
   .nav-button {
-    width: 100%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    margin-left: 0;
+    margin-left: 15px;
+    text-decoration: none;
   }
 
-  .contact-usbtn {
-    width: 100%;
-    text-align: center;
-    padding: 12px;
+  .nav-button .contact-usbtn {
+    border: 1px solid #2a3b5f;
+    color: #2a3b5f;
+    border-radius: 20px;
+    padding: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: all 0.3s ease-in;
   }
 
-}
+  .nav-button .contact-usbtn:hover {
+    color: #fff;
+    background-color: #E97A7A;
+    text-decoration: none;
+    border: none;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  /* Responsive for header */
+
+  @media (max-width: 1280px) {
+    .web-wrapper {
+      padding: 0 15px;
+    }
+
+    .Nav-items {
+      gap: 10px;
+    }
+
+    .Nav-items a{
+      padding: 6px 10px;
+      font-size: 0.95rem;
+    }
+
+    .nav-bar {
+      justify-content: space-evenly;
+    }
+
+    .nav-button .contact-usbtn {
+      padding: 8px 16px; 
+      font-size: 0.95rem; 
+    }
+  }
+
+
+  @media (max-width: 960px) {
+
+    .nav-bar{
+      justify-content: space-between;
+    }
+
+    #nepcert-logo {
+      height: 60px;
+      width: auto;
+    }
+
+    /* to show hamburger menu in smaller screens */
+    .hamburger-menu {
+      display: block;
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .Nav-items {
+      display: none;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+    }
+
+    .Nav-items.Open{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Nav-items a{
+      padding: 12px 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .Nav-items a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .nav-button {
+      width: 100%;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      margin-left: 0;
+    }
+
+    .contact-usbtn {
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+    }
+
+  }
 
 /* Footer css */
 .footer {
@@ -200,4 +231,11 @@ body {
   opacity: 0.8;
 }
 
+
+@media (max-width: 1280px) {
+  .all-links {
+    justify-content: center;
+    gap: 28%;
+  }
+}
 

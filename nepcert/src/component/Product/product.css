@@ -212,7 +212,7 @@
 }
 
 /* Responsive view */
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .product-container {
         padding: 0 40px; 
     }
