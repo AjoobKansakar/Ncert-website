@@ -9,14 +9,21 @@ html {
 body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
   min-height: 100vh;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .web-wrapper {
-  max-width: 1275px;
+  max-width: 1280px;
   margin: auto;
   width: 100%;
-  padding: 0 8%;
+  box-sizing: border-box;
 }
 
 /* Header Css */
@@ -93,7 +100,7 @@ body {
 
   @media (max-width: 1280px) {
     .web-wrapper {
-      padding: 0 15px;
+      padding: 0 10px;
     }
 
     .Nav-items {
@@ -113,6 +120,10 @@ body {
       padding: 8px 16px; 
       font-size: 0.95rem; 
     }
+  }
+
+  @media (max-width: 1024px) {
+
   }
 
 
