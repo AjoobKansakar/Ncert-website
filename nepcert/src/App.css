@@ -11,6 +11,7 @@ body {
   padding: 0;
   max-width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 img {
@@ -23,7 +24,6 @@ img {
   max-width: 1280px;
   margin: auto;
   width: 100%;
-  box-sizing: border-box;
 }
 
 /* Header Css */
@@ -127,15 +127,16 @@ img {
   }
 
 
-  @media (max-width: 960px) {
-
+  @media (max-width: 930px) {
     .nav-bar{
       justify-content: space-between;
+      flex-direction: row-reverse;
     }
 
     #nepcert-logo {
       height: 60px;
       width: auto;
+      padding: 10px 20px;
     }
 
     /* to show hamburger menu in smaller screens */
@@ -148,29 +149,44 @@ img {
     }
 
     .Nav-items {
-      display: none;
+      display: flex;
+      flex-direction: column;
       background-color: #111;
       color: #fff;
       padding: 20px;
-      position: absolute;
+      position: fixed;
       top: 0;
-      right: 0;
+      left: -100%;
       height: 100vh;
+      gap: 5%;
+      width: 30%;
+      transition: left 0.3s ease-in-out;
+      z-index: 99;
     }
 
     .Nav-items.Open{
+      left: 0;
       display: flex;
-      flex-direction: column;
+    }
+
+    .hamburger-close {
+      width: 100%;
+      height: 50px;
+      font-size: xx-large;
+      margin-top: 15px;
     }
 
     .Nav-items a{
       padding: 12px 20px;
       width: 100%;
       box-sizing: border-box;
+      text-align: left;
+      color: #fff;
+      font-size: 1.5em;
     }
 
     .Nav-items a:hover {
-      background-color: #f0f0f0;
+      color: #ffff00; 
     }
 
     .nav-button {
@@ -184,6 +200,49 @@ img {
       width: 100%;
       text-align: center;
       padding: 12px;
+      color: #2a3b5f;
+      background-color: #fff;
+      border: 1px solid #2a3b5f;
+    }
+
+    .contact-usbtn:hover{
+      color: #fff;
+      background-color: #E97A7A;
+      text-decoration: none;
+      border: none;
+    }
+    .nav-button .contact-usbtn {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 768px){
+    .nav-bar {
+      flex-direction: row-reverse;
+    }
+
+    #nepcert-logo {
+      padding: 0 20px;
+    }
+
+    .hamburger-menu {
+      display: block;
+    }
+
+    .Nav-items {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+    }
+
+    .Nav-items a{
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .Nav-items.open {
+      width: 10%;
     }
 
   }

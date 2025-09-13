@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NepcertLogo from '../assets/Nepcert Logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 function Header () {
 
@@ -56,6 +56,9 @@ const toggleHamMenu = () => {
                     </div>
 
                     <nav className={`Nav-items ${IsOpen ? "Open" : ""}`}>
+                        <div className="hamburger-close" onClick={toggleHamMenu} aria-label="Close menu">
+                            <FontAwesomeIcon icon={ faCircleXmark} />
+                        </div>
                         {
                             navbar.map((nav)=>{
                                 return(
