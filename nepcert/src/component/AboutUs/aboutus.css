@@ -34,3 +34,28 @@
     height: auto;
     margin-top: 100px;
 }
+
+/* Responsive */
+
+@media (max-width: 930px) {
+    .aboutus-img {
+        display: none;
+    }
+
+    .aboutus-content {
+        text-align: center;
+    }
+
+    .aboutus-content h1 {
+        font-size: 6rem;
+    }
+
+    .aboutus-content h2 {
+        font-size: 4.6rem;
+    }
+
+    .aboutus-content p {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+}

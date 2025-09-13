@@ -41,3 +41,32 @@
     font-weight: 500;
     line-height: 30px;
 }
+
+@media (max-width: 1024px) {
+    .wcu-container{
+        gap: 3%;
+    }
+    .wcu-box p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 930px) {
+    .wcu-container {
+        flex-direction: column;
+    }
+
+    .wcu-content h1 {
+        font-size: 6rem;
+    }
+
+    .wcu-content p {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .wcu-box p {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+}
