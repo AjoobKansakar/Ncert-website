@@ -227,6 +227,16 @@
 
 /* Responsive */
 
+@media (max-width: 930px){
+    .Contact-form-section {
+        width: 640px;
+    }
+
+    .Contact-us h1{
+        font-size: 5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .Contact-form-section {
         flex-direction: column; 

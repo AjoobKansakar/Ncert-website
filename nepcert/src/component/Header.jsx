@@ -52,12 +52,12 @@ const toggleHamMenu = () => {
 
                     {/* Inserting the hamburger menu */}
                     <div className="hamburger-menu" onClick={toggleHamMenu}>
-                        <FontAwesomeIcon icon={ faBars } />
+                        <FontAwesomeIcon icon={ faBars } className="my-icon" />
                     </div>
 
                     <nav className={`Nav-items ${IsOpen ? "Open" : ""}`}>
                         <div className="hamburger-close" onClick={toggleHamMenu} aria-label="Close menu">
-                            <FontAwesomeIcon icon={ faCircleXmark} />
+                            <FontAwesomeIcon icon={ faCircleXmark} className="my-icon"/>
                         </div>
                         {
                             navbar.map((nav)=>{

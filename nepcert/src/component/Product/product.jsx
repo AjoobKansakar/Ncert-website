@@ -130,6 +130,16 @@ const Product = () => {
                 }
             },
             {
+                breakpoint: 930,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,

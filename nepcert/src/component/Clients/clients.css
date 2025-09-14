@@ -49,6 +49,12 @@
     }
 }
 
+@media (max-width: 930px) {
+    .Clients h1 {
+        font-size: 4rem;
+    }
+}
+
 @media (max-width: 768px) {
     .client-slide {
         height: 120px;

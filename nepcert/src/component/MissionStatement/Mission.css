@@ -27,4 +27,30 @@
     box-shadow: 1px 1px 10px 5px #3333331a;
 }
 
+/* Responsive */
+
+@media (max-width: 930px){
+
+    .mission-content h1 {
+        font-size: 6rem;
+    }
+
+    .mission-content {
+        display: flex;
+        align-items: center;
+    }
+
+    #mission-box {
+        width: 640px;
+        height: auto;
+    }
+
+    #mission-box p {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .mission-img {
+        display: none;
+    }
+}
 
