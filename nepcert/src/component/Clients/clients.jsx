@@ -35,7 +35,7 @@ function Clients () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         cssEase: "linear",
         arrows: false,
         responsive: [
