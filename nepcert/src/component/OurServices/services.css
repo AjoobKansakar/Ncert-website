@@ -145,6 +145,12 @@
 
 /*  responsives */
 
+@media (max-width: 1024px){
+    .service-card {
+        width: 400px;
+    }
+}
+
 @media (max-width: 930px) {
 
     .service-container {
