@@ -52,6 +52,7 @@
 @media (max-width: 930px) {
     .Clients h1 {
         font-size: 4rem;
+        margin-left: 50px;
     }
 }
 
