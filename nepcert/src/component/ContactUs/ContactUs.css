@@ -91,7 +91,6 @@
     width: 38px;
     height: 38px;
     text-align: center;
-
 }
 
 .contact-info {
@@ -231,7 +230,6 @@
     .Contact-form-section {
         width: 640px;
     }
-
     .Contact-us h1{
         font-size: 5rem;
     }
@@ -241,24 +239,23 @@
     .Contact-form-section {
         flex-direction: column; 
         padding: 20px;
-        margin: 0 20px; 
-        box-shadow: none; 
+        margin: auto; 
+        box-shadow: 2px 4px 14px #0000001a; 
     }
-
-
+    .get-in-touch{
+        display: none;
+    }
     .get-in-touch,
     .contact-us-form {
         max-width: 100%; 
         padding-right: 0;
     }
-
     .contact-us-banner {
         height: 200px;
         margin-bottom: -50px; 
     }
-
     .contact-us-banner h1 {
-        font-size: 2.2em;
+        font-size: 3em;
     }
 }
 
@@ -266,12 +263,10 @@
     .contact-us-banner h1 {
         font-size: 1.8em;
     }
-
     .get-in-touch h2,
     .contact-us-form h2 {
         font-size: 1.5em;
     }
-
     .contact-us-form button {
         width: 100%; 
         align-self: stretch;
