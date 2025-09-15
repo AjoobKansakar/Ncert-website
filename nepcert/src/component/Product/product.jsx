@@ -121,6 +121,16 @@ const Product = () => {
         prevArrow: <SamplePrevArrow />,
         responsive: [
             {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
                 breakpoint: 1280,
                 settings: {
                     slidesToShow: 2,
