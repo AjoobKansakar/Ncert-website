@@ -23,34 +23,34 @@ function App() {
     <> 
 
     {/* Header */}
-      <Header></Header>
+      <Header/>
 
     {/* Hero section */}
-      <Hero></Hero>
+      <Hero/>
 
     {/* Aboutus section */}
-      <Aboutus></Aboutus>
+      <Aboutus/>
 
     {/* Why choose us section */}
-      <Wcu></Wcu>
+      <Wcu/>
 
     {/* Product section */}
-      <Product> </Product>
+      <Product/>
 
     {/* Our Services section */}
-     <Services> </Services>
+     <Services/>
 
     {/*  Mission Statement section */}
-      <Mission></Mission>
+      <Mission/>
 
     {/* Client Section */}
-     <Clients> </Clients>
+     <Clients/>
 
     {/* Contact Us Section */}
-      <ContactUs> </ContactUs>
+      <ContactUs/>
 
     {/* Footer */}
-      <Footer> </Footer>
+      <Footer/>
     </>
   )
 }
