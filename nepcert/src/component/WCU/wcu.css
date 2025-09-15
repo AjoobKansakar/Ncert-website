@@ -70,3 +70,21 @@
         line-height: 45px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .wcu {
+        min-height: 150vh;
+    }
+    .wcu-content h1 {
+        font-size: 4rem;
+    }
+    .wcu-box {
+        width: 620px;
+        overflow: hidden;
+    }
+    .wcu-box p {
+        font-size: 2rem;
+    }
+    
+}

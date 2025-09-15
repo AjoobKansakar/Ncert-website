@@ -7,7 +7,6 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 function Wcu () {
     return (
             <div className="wcu">
-
                 <div className="web-wrapper">
                     <div className="wcu-container">
                         <div className="wcu-content">
