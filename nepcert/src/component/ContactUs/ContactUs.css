@@ -226,6 +226,12 @@
 
 /* Responsive */
 
+@media (max-width: 1024px){
+    .Contact-form-section{
+        width: 800px;
+    }
+}
+
 @media (max-width: 930px){
     .Contact-form-section {
         width: 640px;
