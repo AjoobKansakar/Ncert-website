@@ -100,7 +100,7 @@ img {
     display: none;
   }
 
-  /* Responsive for header */
+  /* Responsive for header section */
 
   @media (max-width: 1280px) {
     .web-wrapper {
@@ -172,7 +172,7 @@ img {
       position: fixed;
       top: 0;
       left: -100%;
-      height: 100vh;
+      height: 120vh;
       gap: 5%;
       width: 30%;
       transition: left 0.3s ease-in-out;
@@ -315,15 +315,30 @@ img {
   color: #ffff00;
 }
 
-
 .copyright {
   text-align: center;
   font-size: 0.8em;
   opacity: 0.8;
 }
 
-/*  Responsive */
-@media (max-width: 1280px) {
+/*  Responsive for footer section */
+
+@media (max-width: 1024px){
+  .footer {
+    min-height: 70vh;
+  }
+  .footer h1{
+    margin-left: 100px !important;
+  }
+  .all-links{
+    gap: 15% !important;
+  }
+}
+
+@media (max-width: 1280px){
+  .footer h1{
+    margin-left: 25px;
+  }
   .all-links {
     justify-content: center;
     gap: 28%;
