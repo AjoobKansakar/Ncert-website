@@ -38,12 +38,16 @@ function Clients () {
         autoplaySpeed: 1000,
         cssEase: "linear",
         arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slideToShow: 3,
                     slideToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
                 }
             },
             {
@@ -51,20 +55,26 @@ function Clients () {
                 settings: {
                     slideToShow: 3,
                     slideToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToSrcoll: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
                 }
             },
             {
                 breakpoint: 430,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
                 }
             }
         ]

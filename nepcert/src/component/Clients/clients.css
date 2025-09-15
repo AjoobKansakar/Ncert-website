@@ -19,7 +19,7 @@
 /* for logos box */
 .client-slide {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 150px;
     padding: 20px 0;
@@ -56,8 +56,9 @@
 }
 
 @media (max-width: 768px) {
-    .client-slide {
-        height: 120px;
+
+    .Clients {
+        padding: 0 30px;
     }
     .client-slide img {
         max-width: 150px;
