@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth; /*for smooth nagivation*/
 }
 
+/* to hide the horizontal scroll in the responsive design */
+#root{
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -75,6 +80,7 @@ img {
   }
 
   .nav-button {
+    display: flex;
     margin-left: 15px;
     text-decoration: none;
   }
@@ -125,11 +131,6 @@ img {
       font-size: 0.95rem; 
     }
   }
-
-  @media (max-width: 1024px) {
-
-  }
-
 
   @media (max-width: 930px) {
     .nav-bar{
@@ -265,8 +266,34 @@ img {
       color: #fff;
       padding: 20px 0;
     }
-
   }
+
+@media (max-width: 430px){
+  .my-icon {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  #nepcert-logo {
+    width: auto;
+    height: 50px;
+  }
+  .Nav-items {
+    gap: 1%;
+    width: 15%;
+  }
+  .Nav-items a {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .nav-button {
+    align-items: center;
+    padding: 0;
+  }
+  .nav-button .contact-usbtn{
+    font-size: 6px;
+    font-weight: 700;
+  }
+}
 
 /* Footer css */
 .footer {

@@ -69,3 +69,9 @@
         font-size: 3rem;
     }
 }
+
+@media (nax-width: 430px){
+    .aboutus-content h1{
+        font-size: 2rem;
+    }
+}
