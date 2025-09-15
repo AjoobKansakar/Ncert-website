@@ -233,37 +233,11 @@
 
 @media (max-width: 768px) {
 
-    .product-container {
-        padding: 0 10px;
+    .product-container .section-topic {
+        font-size: 4rem;
     }
-    .slick-prev {
-        left: -5px !important;
-    }
-    .slick-next {
-        right: -5px !important;
-    }
-    .product-card-wrapper {
-        padding: 15px; 
-    }
-    .product-card {
-        height: 220px; 
-    }
-    .product-card.active {
-        height: 300px; 
-    }
-    .product-card .product-icons {
-        width: 60px;
-        height: 60px;
-    }
-    .product-card h3 {
-        font-size: 1.2rem;
-    }
-    .product-card p {
-        font-size: 0.9rem;
-    }
-    .section-topic {
-        font-size: 2rem !important;
-        margin-bottom: 40px !important;
+    .product-detail-text {
+        font-size: 1.3rem;
     }
 }
 
