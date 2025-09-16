@@ -1,6 +1,6 @@
 .aboutus {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     gap: 5%;
     align-items: center;
     justify-content: center;
@@ -70,8 +70,14 @@
     }
 }
 
-@media (nax-width: 430px){
-    .aboutus-content h1{
+@media (max-width: 430px){
+    .aboutus-content h1 {
+        font-size: 3rem;
+    }
+    .aboutus-content h2 {
         font-size: 2rem;
+    }
+    .aboutus-content p {
+        font-size: 1rem;
     }
 }
