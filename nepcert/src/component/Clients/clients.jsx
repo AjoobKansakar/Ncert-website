@@ -38,43 +38,33 @@ function Clients () {
         autoplaySpeed: 1000,
         cssEase: "linear",
         arrows: false,
-        centerMode: true,
-        centerPadding: '0px',
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slideToShow: 3,
-                    slideToScroll: 1,
-                    centerMode: true,
-                    centerPadding: '0px',
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 930,
                 settings: {
-                    slideToShow: 3,
-                    slideToScroll: 1,
-                    centerMode: true,
-                    centerPadding: '0px',
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
-                    slidesToSrcoll: 1,
-                    centerMode: true,
-                    centerPadding: '0px',
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 430,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
-                    centerMode: true,
-                    centerPadding: '0px',
                 }
             }
         ]

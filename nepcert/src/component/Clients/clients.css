@@ -5,7 +5,7 @@
     align-content: center;
     justify-content: center;
     min-height: 50vh;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .Clients h1 {
@@ -13,29 +13,28 @@
     font-weight: bold;
     color: #2a3b5f;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 /* for logos box */
 .client-slide {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-height: 150px;
-    padding: 20px 0;
+    height: 140px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 .client-slide img {
-    max-width: 180px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
+    width: 160px;
+    height: 100px;
     object-fit: contain;
+    object-position: center;
 }
 
-/* Responsive */
 
+/* Responsive */
 @media (max-width: 1024px) {
     .Clients h1 {
         font-size: 2.5rem;
@@ -44,8 +43,8 @@
         height: 120px;
     }
     .client-slide img {
-        max-width: 150px;
-        max-height: 80px;
+        max-width: 140px;
+        max-height: 90px;
     }
 }
 
@@ -62,7 +61,7 @@
         padding: 0 30px;
     }
     .client-slide img {
-        max-width: 150px;
+        max-width: 120px;
         max-height: 80px;
     }
 }
@@ -76,7 +75,7 @@
         height: 100px;
     }
     .client-slide img {
-        max-width: 120px;
+        max-width: 100px;
         max-height: 70px;
     }
 }
