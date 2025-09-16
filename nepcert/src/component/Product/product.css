@@ -1,5 +1,5 @@
 .products-section {
-    height: 100vh; 
+    min-height: 100vh; 
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -245,6 +245,9 @@
 }
 
 @media (max-width: 480px) {
+    .products-section {
+        min-height: 70vh;
+    }
     .product-container {
         padding: 0 5px;
     }

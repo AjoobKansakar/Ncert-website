@@ -217,6 +217,12 @@
 }
 
 @media (max-width: 480px) {
+    .services{
+        min-height: 70vh;
+    }
+    .service-container {
+        gap: 1%;
+    }
     .service-data {
         width: 95%;
         padding: 10px;
@@ -226,6 +232,9 @@
     }
     .service-data p {
         font-size: 1rem;
+    }
+    .services-present{
+        margin-top: 0;
     }
     .service-card-wrapper {
         width: 90%; 

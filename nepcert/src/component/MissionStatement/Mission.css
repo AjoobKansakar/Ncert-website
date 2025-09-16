@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     gap: 5%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .mission-content {
@@ -64,6 +64,22 @@
     #mission-box p {
         font-size: 2.5rem;
         line-height: 50px;
+    }
+}
+
+@media (max-width: 430px){
+
+    .mission-container{
+        min-height: 70vh;
+    }
+    .mission-content h1{
+        font-size: 2rem;
+    }
+    #mission-box {
+        width: 300px;
+    }
+    #mission-box p {
+        font-size: 1rem;
     }
 }
 
