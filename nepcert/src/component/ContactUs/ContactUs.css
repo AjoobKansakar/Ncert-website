@@ -266,6 +266,10 @@
 }
 
 @media (max-width: 480px) {
+    .Contact-form-section{
+        width: 300px;
+        margin: auto;
+    }
     .contact-us-banner h1 {
         font-size: 1.8em;
     }
