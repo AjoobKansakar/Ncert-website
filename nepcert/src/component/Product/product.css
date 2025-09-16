@@ -251,16 +251,9 @@
     .product-container {
         padding: 0 5px;
     }
-    .slick-prev,
-    .slick-next {
-        width: 35px; 
-        height: 35px;
+    .product-detail-text{
+        font-size: 1rem;
     }
-    .slick-prev:before,
-    .slick-next:before {
-        font-size: 20px !important;
-    }
-
     .product-container .section-topic {
         font-size: 2rem;
     }

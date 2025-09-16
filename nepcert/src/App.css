@@ -282,11 +282,10 @@ img {
     width: 15%;
   }
   .Nav-items a {
-    text-align: center;
     font-size: 0.8rem;
   }
   .nav-button {
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
   .nav-button .contact-usbtn{

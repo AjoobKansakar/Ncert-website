@@ -244,5 +244,8 @@
     .service-card {
         width: 320px;
     }
+    .service-card-description {
+        font-size: 1rem;
+    }
 }
 
