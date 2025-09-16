@@ -257,4 +257,8 @@
     .slick-next:before {
         font-size: 20px !important;
     }
+
+    .product-container .section-topic {
+        font-size: 2rem;
+    }
 }

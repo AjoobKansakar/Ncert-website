@@ -165,7 +165,8 @@ const Product = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: true,
+                    arrows: false,
                 }
             },
         ]
