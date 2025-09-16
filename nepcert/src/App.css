@@ -232,6 +232,13 @@ img {
     }
   }
 
+  @media (max-width: 860px){
+    .nav-button .contact-usbtn {
+      text-align: center;
+    }
+
+  }
+
   @media (max-width: 768px){
     .nav-bar {
       flex-direction: row-reverse;
@@ -383,6 +390,12 @@ img {
   }
   .copyright {
     padding: 20px 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .footer h1{
+    margin-left: 35px !important;
   }
 }
 

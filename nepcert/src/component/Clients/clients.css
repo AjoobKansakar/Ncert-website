@@ -55,6 +55,16 @@
     }
 }
 
+@media (max-width: 860px) {
+    .Clients {
+        min-height: 30vh;
+    }
+
+    .Clients h1{
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 768px) {
 
     .Clients {

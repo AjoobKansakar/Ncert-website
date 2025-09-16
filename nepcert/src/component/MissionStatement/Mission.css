@@ -54,6 +54,12 @@
     }
 }
 
+@media (max-width: 860px) {
+    .mission-content h1{
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px){
     .mission-container {
         min-height: 120vh;

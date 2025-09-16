@@ -188,6 +188,15 @@
     }
 }
 
+@media (max-width: 860px) {
+    .services{
+        min-height: 70vh;
+    }
+    .service-container {
+        gap: 1px;
+    }
+}
+
 @media (max-width: 768px) {
     .service-data {
         width: 90%;

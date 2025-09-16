@@ -60,6 +60,12 @@
     }
 }
 
+@media (max-width: 860px){
+    .aboutus {
+        min-height: 50vh;
+    }
+}
+
 @media (max-width: 768px) {
     .aboutus-content h1 {
         font-size: 4rem;
@@ -85,3 +91,4 @@
         min-height: 70vh;
     }
 }
+

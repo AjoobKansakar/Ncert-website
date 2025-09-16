@@ -234,6 +234,12 @@
     }
 }
 
+@media (max-width: 860px){
+    .products-section{
+        min-height: 60vh;
+    }
+}
+
 @media (max-width: 768px) {
     
     .product-container .section-topic {
