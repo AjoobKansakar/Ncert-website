@@ -72,7 +72,6 @@
 }
 
 @media (max-width: 768px) {
-
     .wcu {
         min-height: 150vh;
     }
@@ -86,5 +85,21 @@
     .wcu-box p {
         font-size: 2rem;
     }
-    
+}
+
+@media (max-width: 430px){
+    .wcu-content h1 {
+        font-size: 3rem;
+    }
+    .wcu-content p {
+        font-size: 1rem;
+        padding: 6px;
+    }
+    .wcu-box {
+        width: 300px;
+    }
+    .wcu-box p {
+        font-size: 1rem;
+        line-height: 20px;
+    }
 }
