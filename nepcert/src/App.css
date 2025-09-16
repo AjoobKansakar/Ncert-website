@@ -376,27 +376,45 @@ img {
   .footer{
     min-height: 40vh;
   }
-
   .footer h1 {
     font-size: 4.5rem;
   }
-
   .all-links{
     gap: 15%;
   }
-  
   .copyright {
     padding: 20px 0;
   }
 }
 
 @media (max-width: 768px){
-
+  .footer {
+    min-height: 120vh;
+  }
   .footer h1 {
     margin-left: 42px;
   }
   .all-links {
     gap: 10%;
+  }
+}
+
+@media (max-width: 430px){
+  .web-wrapper {
+    padding: 0;
+  }
+  .footer h1{
+    font-size: 2.5rem;
+    margin: 10px !important;
+  }
+  .all-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    border-bottom: 2px solid #fff;
+  }
+  .copyright {
+    font-size: 0.5rem;
   }
 }
 
