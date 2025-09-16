@@ -1,6 +1,6 @@
 .services {
     background-color: #F5E0E0;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -222,7 +222,7 @@
         padding: 10px;
     }
     .service-data h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .service-data p {
         font-size: 1rem;
@@ -231,6 +231,9 @@
         width: 90%; 
         max-width: 280px; 
         height: 150px;
+    }
+    .service-card {
+        width: 320px;
     }
 }
 
