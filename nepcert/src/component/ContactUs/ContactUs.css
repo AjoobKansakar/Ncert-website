@@ -265,6 +265,12 @@
     }
 }
 
+@media (max-width: 540px) {
+    .Contact-form-section {
+        width: 400px;
+    }
+}
+
 @media (max-width: 480px) {
     .Contact-form-section{
         width: 300px;
