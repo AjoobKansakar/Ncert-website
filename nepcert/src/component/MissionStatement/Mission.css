@@ -73,6 +73,18 @@
     }
 }
 
+@media (max-width: 540px) {
+    .mission-container h1 {
+        font-size: 3rem;
+    }
+    #mission-box {
+        width: 400px;
+    }
+    #mission-box p {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 430px){
     .mission-container{
         min-height: 70vh;
