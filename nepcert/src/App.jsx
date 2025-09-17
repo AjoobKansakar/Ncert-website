@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Routes } from "react-router"
 // Global Css
 import './App.css'
 // all Components imports

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './scrollup.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 function ScrollUp () {
     const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +32,8 @@ function ScrollUp () {
         <div className="scroll-button">
             { isVisible && ( 
                 <button onClick={scrollToTop} className="Scroll-up">
-                    <FontAwesomeIcon icon={ FaArrowUp } />
+                    {/* <FontAwesomeIcon icon={ FaArrowUp } /> */}
+                    <FontAwesomeIcon icon={ faArrowUp }  className="scroll-arrow-icon" />
                 </button>
             )}
         </div>
