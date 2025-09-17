@@ -225,6 +225,15 @@
     }
 }
 
+@media (max-width: 540px){
+    .services {
+        min-height: 60vh;
+    }
+    .service-card {
+        width: 400px;
+    }
+}
+
 @media (max-width: 480px) {
     .services{
         min-height: 70vh;
