@@ -13,6 +13,7 @@ import Mission from './component/MissionStatement/Mission';
 import Clients from './component/Clients/clients';
 import ContactUs from './component/ContactUs/ContactUs';
 import Footer from './component/Footer';
+import ScrollUp from './component/ScrollUpButton/scrollup';
 
 
 function App() {
@@ -51,6 +52,9 @@ function App() {
 
     {/* Footer */}
       <Footer/>
+
+    {/* ScrollUp button */}
+      <ScrollUp/>
     </>
   )
 }

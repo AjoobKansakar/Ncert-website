@@ -1,0 +1,23 @@
+.scroll-up-button {
+  position: fixed; /* Fixes the button relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  background-color: #007bff; /* Example background color */
+  color: white; /* Example text color */
+  border: none;
+  border-radius: 50%; /* Makes it circular */
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensures it stays on top of other content */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.scroll-up-button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
