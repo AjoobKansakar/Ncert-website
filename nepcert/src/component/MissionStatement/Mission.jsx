@@ -4,6 +4,25 @@ import MissionBgImg from '../../assets/MissionStatement_img.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
+const missionPoints = [
+    {
+        id: 1,
+        content: " Provide high quality, affordable software solutions. "
+    },
+    {
+        id: 2,
+        content: " Create and cultivate long-term relationship with clients. "
+    },
+    {
+        id: 3,
+        content: " Respond immediately to the changing needs of our clients. "
+    },
+    {
+        id: 4,
+        content: " Achieve complete customer satisfaction. "
+    }
+];
+
 function Mission () {
     return (
         <section className='MissionStatement' id='MissionStatement'>
@@ -12,10 +31,16 @@ function Mission () {
                     <div className="mission-content">
                         <h1> Mission Statement </h1>
                         <div id="mission-box">
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} /> Provide high quality, affordable software solutions. </p>
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} /> Create and cultivate long-term relationship with clients. </p>
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} /> Respond immediately to the changing needs of our clients. </p>
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} /> Achieve complete customer satisfaction. </p>
+                            {
+                                missionPoints.map ( (points) => {
+                                    return (
+                                        <p key={points.id}>
+                                            <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} />
+                                            {points.content}
+                                        </p>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                         <div className="mission-img">
