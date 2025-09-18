@@ -408,8 +408,14 @@ img {
 }
 
 @media (max-width: 860px) {
+  .footer {
+    padding: 20px;
+  }
   .footer h1{
-    margin-left: 35px !important;
+    margin-left: 10px !important;
+  }
+  .all-links h2{
+    font-size: 2rem;
   }
 }
 
