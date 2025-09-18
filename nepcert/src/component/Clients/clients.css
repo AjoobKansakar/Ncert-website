@@ -96,3 +96,14 @@
     }
 }
 
+@media (max-width: 360px){
+    .client-slide {
+        height: 90px;
+    }
+    .client-slide img {
+        max-width: 110px; 
+        max-height: 75px;
+        margin: auto;
+    }
+}
+
