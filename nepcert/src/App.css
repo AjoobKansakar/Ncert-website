@@ -322,9 +322,10 @@ img {
 
 /* Footer css */
 .footer {
-  min-height: 60vh;
+  min-height: 65vh;
   background-color: #000;
   color: #fff;
+  padding-top: 20px;
 }
 
 .footer h1 {
