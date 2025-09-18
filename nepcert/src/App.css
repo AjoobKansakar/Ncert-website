@@ -285,14 +285,14 @@ img {
   }
 }
 
-@media (max-width: 430px){
+@media (max-width: 432px){
   .my-icon {
     font-size: 1rem;
     margin-top: 20px;
   }
   #nepcert-logo {
     width: auto;
-    height: 50px;
+    height: 60px;
   }
   .Nav-items {
     gap: 1%;
@@ -308,6 +308,15 @@ img {
   .nav-button .contact-usbtn{
     font-size: 6px;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-button{
+    width: 60px;
+  }
+  .nav-button .contact-usbtn {
+    font-size: 5px;
   }
 }
 
