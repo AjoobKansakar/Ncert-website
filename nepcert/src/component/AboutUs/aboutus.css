@@ -36,7 +36,11 @@
 }
 
 /* Responsive */
-
+@media (max-width: 1024px){
+    .aboutus {
+        padding: 30px;
+    }
+}
 @media (max-width: 930px) {
     .aboutus-img {
         display: none;
