@@ -421,13 +421,17 @@ img {
 
 @media (max-width: 768px){
   .footer {
-    min-height: 120vh;
+    min-height: 50vh;
   }
   .footer h1 {
+    font-size: 3rem;
     margin-left: 42px;
   }
   .all-links {
-    gap: 10%;
+    gap: 8%;
+  }
+  .all-links h2{
+    font-size: 1.5rem;
   }
 }
 
