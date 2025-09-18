@@ -193,6 +193,13 @@
     z-index: 10;
     top: 50% !important; 
     transform: translateY(-50%); 
+    transition: all 0.3s ease-in-out;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #E97A7A !important;
+    color: #fff;
 }
 
 .slick-prev {
@@ -209,13 +216,16 @@
     font-size: 40px !important; 
     color: #000000 !important;
     opacity: 0.9;
+    transition: color 0.3s ease-in-out;
 }
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: #ffffff !important; 
+}
+
 
 /* Responsive */
-
-@media (max-width: 1024px){
-}
-
 @media (max-width: 1280px) {
     .product-container {
         padding: 0 40px; 
