@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 1024px) {
+    .wcu {
+        padding: 30px;
+    }
     .wcu-container{
         gap: 3%;
     }
