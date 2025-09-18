@@ -3,6 +3,28 @@ import "./wcu.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
+const wcuPoints = [
+    {
+        id: 1,
+        content: " It is providing consultancy on Document Management System to its clients since last decade. "
+    },
+    {
+        id: 2,
+        content: " It has in-depth knowledge of record management and document handling process. "
+    },
+    {
+        id: 3,
+        content: " It has a team of professionals with in-depth knowledge of Document Management System. "
+    },
+    {
+        id: 4,
+        content: " Nep Cert in association with sister organization NTECH has been providing document conversion services (Scanning & Data Entry) to wide variety of clients. "
+    },
+    {
+        id: 5,
+        content: " We offer affordable, high speed, quality document scanning and data entry services from paper copy to digital format. "
+    }
+]
 
 function Wcu () {
     return (
@@ -15,12 +37,17 @@ function Wcu () {
                         </div>
 
                         <div className="wcu-box">
-                            {/* fontawesome Icons used */}
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} /> It is providing consultancy on Document Management System to its clients since last decade. </p>
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} /> It has in-depth knowledge of record management and document handling process. </p>
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} />  It has a team of professionals with in-depth knowledge of Document Management System. </p>
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} /> Nep Cert in association with sister organization NTECH has been providing document conversion services (Scanning & Data Entry) to wide variety of clients. </p>
-                            <p> <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} /> We offer affordable, high speed, quality document scanning and data entry services from paper copy to digital format. </p>
+                           {
+                            wcuPoints.map ( (point) => {
+                                return (
+                                    <p key={point.id}>
+                                        <FontAwesomeIcon icon={faCaretRight} style={{color: "#000000",}} />
+                                        {''}
+                                        {point.content}
+                                    </p>
+                                )
+                            })
+                           }
                         </div>
                     </div>
                 </div>
