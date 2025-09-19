@@ -7,9 +7,10 @@ html {
 }
 
 /* to hide the horizontal scroll in the responsive design */
-#root{
+
+/* #root{
   overflow: hidden;
-}
+} */
 
 body {
   margin: 0;
@@ -372,6 +373,8 @@ img {
   text-align: center;
   font-size: 0.8em;
   opacity: 0.8;
+  margin: 0;
+  padding: 0;
 }
 
 /*  Responsive for footer section */
