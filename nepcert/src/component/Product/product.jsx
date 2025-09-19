@@ -110,15 +110,16 @@ const Product = () => {
     };
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        arrows: false,
+        // nextArrow: <SampleNextArrow />,
+        // prevArrow: <SamplePrevArrow />,
         responsive: [
             {
                 breakpoint: 1024,
@@ -126,8 +127,6 @@ const Product = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
-                    arrows: false,
                 }
             },
             {
@@ -136,7 +135,6 @@ const Product = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
                 }
             },
             {
@@ -145,8 +143,6 @@ const Product = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
-                    arrows: false,
                 }
             },
             {
@@ -155,8 +151,6 @@ const Product = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
-                    arrows: false,
                 }
             },
             {
@@ -165,8 +159,6 @@ const Product = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
-                    arrows: false,
                 }
             },
             {
@@ -175,8 +167,6 @@ const Product = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
-                    arrows: false,
                 }
             },
             {
@@ -185,8 +175,6 @@ const Product = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
-                    arrows: false,
                 }
             }
         ]
