@@ -31,6 +31,7 @@
     height: 100px;
     object-fit: contain;
     object-position: center;
+    margin: auto;
 }
 
 
@@ -45,6 +46,7 @@
     .client-slide img {
         max-width: 140px;
         max-height: 90px;
+        margin: auto;
     }
 }
 
@@ -73,6 +75,7 @@
     .client-slide img {
         max-width: 120px;
         max-height: 80px;
+        margin: auto;
     }
 }
 
