@@ -320,10 +320,11 @@ img {
 }
 
 @media (max-width: 360px) {
-  /* .nav-button{
-    width: 60px;
-    height: ;
-  } */
+  #nepcert-logo{
+    height: 50px;
+    width: auto;
+  }
+
   .nav-button .contact-usbtn {
     width: 115px;
     height: 40px;
