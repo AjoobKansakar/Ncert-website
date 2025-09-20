@@ -111,7 +111,7 @@ img {
 
   @media (max-width: 1280px) {
     .web-wrapper {
-      padding: 0 10px;
+      max-width: 1000px;
     }
 
     .Nav-items {
@@ -288,8 +288,8 @@ img {
 
 @media (max-width: 432px){
   .my-icon {
-    font-size: 1rem;
-    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-top: 15px;
   }
   #nepcert-logo {
     width: auto;
@@ -297,7 +297,11 @@ img {
   }
   .Nav-items {
     gap: 1%;
-    width: 15%;
+    width: 60%;
+  }
+  .hamburger-close .my-icon {
+    margin-top: 0;
+    font-size: 2rem;
   }
   .Nav-items a {
     font-size: 0.8rem;
@@ -307,7 +311,9 @@ img {
     padding: 0;
   }
   .nav-button .contact-usbtn{
-    font-size: 6px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
     font-weight: 700;
   }
 }
