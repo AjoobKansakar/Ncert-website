@@ -42,38 +42,19 @@ function Clients () {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 930,
-                settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
+                    infinite: true,
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 500,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
+                    infinite: true,
                 }
             },
-            {
-                breakpoint: 430,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 360,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
         ]
     };
 
