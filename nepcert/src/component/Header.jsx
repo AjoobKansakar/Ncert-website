@@ -62,7 +62,8 @@ const toggleHamMenu = () => {
                         {
                             navbar.map((nav)=>{
                                 return(
-                                    <a key={nav.id} href={`#${nav.slug}`}>{nav.title}</a>
+                                    // <img src={NepcertLogo} alt="Nepcert logo" id="nepcert-logo"/>
+                                    <a key={nav.id} href={`#${nav.slug}`} onClick={toggleHamMenu}>{nav.title}</a>
                                 )
                             })
                         } 
@@ -71,7 +72,7 @@ const toggleHamMenu = () => {
                         {
                             contact.map((button) => {
                                 return (
-                                    <a role="button" className="contact-usbtn" key={button.id} href={`#${button.slug}`}>{button.title}</a>
+                                    <a onClick={toggleHamMenu} role="button" className="contact-usbtn" key={button.id} href={`#${button.slug}`}>{button.title}</a>
                                 )
                             })
                         }
