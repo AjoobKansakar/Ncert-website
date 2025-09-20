@@ -320,11 +320,14 @@ img {
 }
 
 @media (max-width: 360px) {
-  .nav-button{
+  /* .nav-button{
     width: 60px;
-  }
+    height: ;
+  } */
   .nav-button .contact-usbtn {
-    font-size: 5px;
+    width: 115px;
+    height: 40px;
+    font-size: 0.8rem;
   }
 }
 
