@@ -1,9 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
 import './product.css';
-// using React slick for slider
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// Using Swiper.js for the slider 
+import React, { useEffect, useState, useRef } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 // icons 
 import OnlineFileServerIcon from '../../assets/OnlineFileServer_icon.svg';
 import OnlineRecordManagementSystemIcon from '../../assets/Record_icon.svg';
@@ -77,139 +79,69 @@ const products = [
     }
 ];
 
-// for the slider Arrows
-const SampleNextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "block", background: "#fff", borderRadius: "50%" }}
-            onClick={onClick}
-        />
-    );
-};
-
-const SamplePrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "block", background: "#fff", borderRadius: "50%" }}
-            onClick={onClick}
-        />
-    );
-};
-
 const Product = () => {
-    // adding a useState for the cards effect
-    const [ activeProductId, setActiveProductId ] = useState(null);
-    const sliderRef = useRef(null);
+// useeffect 
+  const [activeProductId, setActiveProductId] = useState(null);
+// product slide flip when clicked
+  const handleCardClick = (id) => {
+    setActiveProductId(activeProductId === id ? null : id);
+  };
 
-    useEffect(() => {
-        setTimeout(() => {
-            if(sliderRef.current) {
-                sliderRef.current.slickGoTo(0); // reset the slider to first
-                window.dispatchEvent( new Event("resize"));
-            }
-        }, 200);
-    }, []);
-
-    // adding the clicking effects in the card
-    const handleCardClick = (id) => {
-        setActiveProductId( activeProductId === id ? null : id );
-    };
-
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        // nextArrow: <SampleNextArrow />,
-        // prevArrow: <SamplePrevArrow />,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            },
-            {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            },
-        ]
-    };
-    return (
-        <section className="products-section" id="Products">
-            <div className="product-container">
-                <h2 className="section-topic"> Products & Services </h2>
-                <Slider {...settings}>
-                    {products.map(product => (
-                        <div key={product.id} className="product-card-wrapper">
-                            <div
-                            // new div for the cards effect
-                                className={`product-card ${activeProductId === product.id ? 'active' : ''}`}
-                                onClick={() => handleCardClick(product.id)}
-                            >
-                                {/* product icon */}
-                                <img
-                                    src={product.icon}
-                                    alt={product.title}
-                                    className="product-icons"
-                                />
-
-                                <h3>{product.title}</h3>
-                                {/* for the cards to show up */}
-                                {activeProductId === product.id && (
-                                    <div className="product-description-wrapper">
-                                        {/* scrollbar */}
-                                        <div className="scroll-bar"> </div>
-                                        <div className="product-details-content">
-                                            {product.details.map((item, index) => (
-                                                <React.Fragment key={index}>
-                                                    {item.type === 'text' && (
-                                                        <p className="product-detail-text">{item.content}</p>
-                                                    )}
-                                                    {item.type === 'icon' && (
-                                                        <div className="product-detail-item">
-                                                            <img src={item.icon} alt="arrow" className="product-detail-icon" />
-                                                            <p className="product-detail-content">{item.content}</p>
-                                                        </div>
-                                                    )}
-                                                </React.Fragment>
-                                            ))}
-                                            {(product.details.length === 0 || (product.details.length === 1 && product.details[0].content === "")) && (
-                                                <p className="product-detail-text">No description available.</p>
-                                            )}
-                                        </div>
-                                    </div>
-                                )}
+  return (
+    <section className="products-section" id="Products">
+      <div className="product-container">
+        <h2 className="section-topic"> Products & Services </h2>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          breakpoints={{
+            1024: { slidesPerView: 3 },
+            900: { slidesPerView: 2 },
+            600: { slidesPerView: 1 }
+          }}
+        >
+          {products.map(product => (
+            <SwiperSlide key={product.id}>
+              <div
+                className={`product-card ${activeProductId === product.id ? 'active' : ''}`}
+                onClick={() => handleCardClick(product.id)}
+              >
+                <img src={product.icon} alt={product.title} className="product-icons" />
+                <h3>{product.title}</h3>
+                {activeProductId === product.id && (
+                  <div className="product-description-wrapper">
+                    <div className="scroll-bar"></div>
+                    <div className="product-details-content">
+                      {product.details.map((item, index) => (
+                        <React.Fragment key={index}>
+                          {item.type === 'text' && (
+                            <p className="product-detail-text">{item.content}</p>
+                          )}
+                          {item.type === 'icon' && (
+                            <div className="product-detail-item">
+                              <img src={item.icon} alt="arrow" className="product-detail-icon" />
+                              <p className="product-detail-content">{item.content}</p>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-        </section>
-    );
+                          )}
+                        </React.Fragment>
+                      ))}
+                      {(product.details.length === 0 || (product.details.length === 1 && product.details[0].content === "")) && (
+                        <p className="product-detail-text">No description available.</p>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
 };
-
 
 export default Product;
