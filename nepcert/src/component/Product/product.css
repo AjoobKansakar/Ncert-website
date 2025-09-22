@@ -225,6 +225,15 @@
     color: #ffffff !important; 
 }
 
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
 
 /* Responsive */
 @media (max-width: 1280px) {

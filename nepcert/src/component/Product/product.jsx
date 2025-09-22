@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import './product.css';
 // using React slick for slider
 import Slider from 'react-slick';
@@ -103,6 +103,16 @@ const SamplePrevArrow = (props) => {
 const Product = () => {
     // adding a useState for the cards effect
     const [ activeProductId, setActiveProductId ] = useState(null);
+    const sliderRef = useRef(null);
+
+    useEffect(() => {
+        setTimeout(() => {
+            if(sliderRef.current) {
+                sliderRef.current.slickGoTo(0); // reset the slider to first
+                window.dispatchEvent( new Event("resize"));
+            }
+        }, 200);
+    }, []);
 
     // adding the clicking effects in the card
     const handleCardClick = (id) => {
