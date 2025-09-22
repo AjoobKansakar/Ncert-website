@@ -170,70 +170,12 @@
     display: block;
 }
 
-/* for the slider dots */
-/* inactive */
-.slick-dots li button:before {
-    font-size: 2.5rem !important; 
-    color: #cbcbcb; 
-    opacity: 0.75;
-    margin-top: 20px;
+/*  for swiper.js arrows and pagination */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  display: none !important;
 }
-
-/* active */
-.slick-dots li.slick-active button:before {
-    color: #000000; 
-    opacity: 1;
-}
-
-/* for the slider arrows */
-.slick-prev,
-.slick-next {
-    width: 45px !important;
-    height: 45px !important;
-    border: 1px solid #d0d0d0 !important;
-    z-index: 10;
-    top: 50% !important; 
-    transform: translateY(-50%); 
-    transition: all 0.3s ease-in-out;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-    background-color: #E97A7A !important;
-    color: #fff;
-}
-
-.slick-prev {
-    left: -40px !important; 
-}
-
-.slick-next {
-    right: -40px !important; 
-}
-
-.slick-prev:before,
-.slick-next:before {
-    font-family: 'slick'; 
-    font-size: 40px !important; 
-    color: #000000 !important;
-    opacity: 0.9;
-    transition: color 0.3s ease-in-out;
-}
-
-.slick-prev:hover:before,
-.slick-next:hover:before {
-    color: #ffffff !important; 
-}
-
-.slick-slide {
-    display: flex !important;
-    justify-content: center;
-}
-
-.slick-track {
-    display: flex !important;
-}
-
 
 /* Responsive */
 @media (max-width: 1280px) {
