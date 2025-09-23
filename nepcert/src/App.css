@@ -388,6 +388,11 @@ img {
   padding: 0;
 }
 
+.copyright p {
+  margin: 0;
+  padding: 20px;
+}
+
 /*  Responsive for footer section */
 
 @media (max-width: 1024px){
