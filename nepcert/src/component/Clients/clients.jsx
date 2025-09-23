@@ -28,20 +28,35 @@ function Clients () {
         { id: 8, name: 'Client 8', logo: Client8}
     ]; 
     
+    
     return (
         <section className="Clients">
             <div className="web-wrapper">
                 <h1> We Are Trusted By </h1>
-                <Slider {...settings}>
+                <Swiper
+                    modules={[Autoplay]}
+                    spaceBetween={20}
+                    slidesPerView={4}
+                    autoplay={{ delay: 1500, disableOnInteraction: false }}
+                    loop={true}
+                    speed={1000}
+                    breakpoints={{
+                        1024: { slidesPerView: 4 },
+                        500: { slidesPerView: 3 },
+                        0: { slidesPerView: 1 }
+                    }}
+                >
                     {ClientSlider.map(client => (
-                        <div key={client.id} className="client-slide">
-                            <img src={client.logo} alt={client.name}/>
-                        </div>
+                        <SwiperSlide key={client.id}>
+                            <div className="client-slide">
+                                <img src={client.logo} alt={client.name} />
+                            </div>
+                        </SwiperSlide>
                     ))}
-                </Slider>
+                </Swiper>
             </div>
         </section>
-    )
+    );
 }
 
 export default Clients;
