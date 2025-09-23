@@ -199,12 +199,6 @@
     .product-container {
         padding: 0 40px; 
     }
-    .slick-prev {
-        left: 0px !important;
-    }
-    .slick-next {
-        right: 0px !important;
-    }
 }
 
 @media (max-width: 930px) {
