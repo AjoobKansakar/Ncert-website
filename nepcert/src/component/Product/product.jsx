@@ -101,6 +101,7 @@ const Product = () => {
           breakpoints={{
             1024: { slidesPerView: 3 },
             900: { slidesPerView: 2 },
+            768: { slidesPerView: 2},
             600: { slidesPerView: 1 },
             300: { slidesPerView: 1 }
           }}
