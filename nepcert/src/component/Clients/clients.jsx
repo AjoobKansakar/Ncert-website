@@ -1,9 +1,9 @@
 import React from "react";
 import './clients.css';
-// React slick imports
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick';
+// using Swiper.js for the client slider
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 // Imports for client logos
 import Client1 from '../../assets/clients_1.png';
 import Client2 from '../../assets/clients_2.png';
@@ -28,36 +28,6 @@ function Clients () {
         { id: 8, name: 'Client 8', logo: Client8}
     ]; 
     
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        cssEase: "linear",
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            },
-        ]
-    };
-
     return (
         <section className="Clients">
             <div className="web-wrapper">
