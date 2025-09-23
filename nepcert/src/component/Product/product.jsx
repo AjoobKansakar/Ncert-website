@@ -1,6 +1,6 @@
 import './product.css';
 // Using Swiper.js for the slider 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import 'swiper/css';
@@ -36,7 +36,6 @@ const products = [
         icon: OnlineRecordManagementSystemIcon,
         details: [
             { type: 'text', content: "It allows user to access System from ANYWHERE, ANYTIME with an internet connection. It transforms paper documents to electronic document which can be viewed, edited, searched and distributed. It is used to track and store images of paper documents with reporting features. It provides storage, security, indexing and quick retrival capabilities. It provides means for inexpensive concurrent access to electronics copies of records currently stored as paper."}
-
         ]
     },
     {
@@ -80,9 +79,8 @@ const products = [
 ];
 
 const Product = () => {
-// useeffect 
   const [activeProductId, setActiveProductId] = useState(null);
-// product slide flip when clicked
+
   const handleCardClick = (id) => {
     setActiveProductId(activeProductId === id ? null : id);
   };
@@ -91,17 +89,20 @@ const Product = () => {
     <section className="products-section" id="Products">
       <div className="product-container">
         <h2 className="section-topic"> Products & Services </h2>
+        
+        {/* Swiper */}
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={3}
           navigation
-          pagination={{ clickable: true }}
+          pagination={{ el: ".custom-pagination", clickable: true }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           breakpoints={{
             1024: { slidesPerView: 3 },
             900: { slidesPerView: 2 },
-            600: { slidesPerView: 1 }
+            600: { slidesPerView: 1 },
+            300: { slidesPerView: 1 }
           }}
         >
           {products.map(product => (
@@ -139,6 +140,8 @@ const Product = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* for the pagination dots */}
+        <div className="custom-pagination"></div>
       </div>
     </section>
   );

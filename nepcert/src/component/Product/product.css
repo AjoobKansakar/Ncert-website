@@ -172,10 +172,27 @@
 
 /*  for swiper.js arrows and pagination */
 .swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination {
+.swiper-button-prev {
   display: none !important;
 }
+
+/* move dots further down */
+.custom-pagination {
+  text-align: center;
+  margin-top: 30px; 
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  background: #2a3b5f;
+  opacity: 0.6;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #2a3b5f;
+}
+
+
 
 /* Responsive */
 @media (max-width: 1280px) {
