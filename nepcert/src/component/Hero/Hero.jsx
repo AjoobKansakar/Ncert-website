@@ -5,7 +5,8 @@ import img1 from "../../assets/hero_1.jpg";
 import img2 from "../../assets/hero_2.jpg";
 import img3 from "../../assets/hero_3.jpg";
 
-const Hero = () => {
+const Hero = ({Data}) => {
+    console.log("Banners",typeof Data);
 
     const slides = [
         {
