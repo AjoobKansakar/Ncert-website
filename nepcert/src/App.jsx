@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState ,useEffect} from 'react'
 // Global Css
 import './App.css'
 // all Components imports
+import axios from 'axios';
 import Header from './component/Header';
 import Hero from './component/Hero/Hero';
 import Aboutus from './component/AboutUs/aboutus';
@@ -16,38 +17,58 @@ import ScrollUp from './component/ScrollUpButton/scrollup';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false); 
+  
+  // calling api
+
+  useEffect(() => {
+    
+    (async () => {
+     
+      try {
+        setLoading(true);
+        setError(false);
+        const response = await axios.get('http://nyatapol.biz/test_dash/api/home/');
+        setData(response.data);
+        setLoading(false);
+      } catch (error) {
+        setError(true);
+        setLoading(false);
+      }
+    })();
+  }, []);
 
   return (
     // these are called fragments and it loads the components
     <> 
-
     {/* Header */}
       <Header/>
 
     {/* Hero section */}
-      <Hero/>
+      <Hero Data={data?.banners}  />
 
     {/* Aboutus section */}
-      <Aboutus/>
+      <Aboutus Data={data?.about} />
 
     {/* Why choose us section */}
-      <Wcu/>
+      <Wcu Data={''} />
 
     {/* Product section */}
-      <Product/>
+      <Product Data={data?.products} />
 
     {/* Our Services section */}
-     <Services/>
+     <Services Data={data?.services} />
 
     {/*  Mission Statement section */}
-      <Mission/>
+      <Mission Data={''} />
 
     {/* Client Section */}
-     <Clients/>
+     <Clients Data={''} />
 
     {/* Contact Us Section */}
-      <ContactUs/>
+      <ContactUs Data={''} />
 
     {/* Footer */}
       <Footer/>
