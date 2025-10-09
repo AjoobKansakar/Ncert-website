@@ -48,7 +48,6 @@ const Aboutus = ({ Data }) => {
     //         </div>
     //     </div>
     // )
-
     return (
     <div className="web-wrapper">
       <div className="aboutus" id="AboutUs">
