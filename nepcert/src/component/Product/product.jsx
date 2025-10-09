@@ -108,7 +108,7 @@ const Product = ({Data}) => {
             300: { slidesPerView: 1 }
           }}
         >
-          {Data?.en?.map(product => (
+          {Data?.map(product => (
             <SwiperSlide key={product.id}>
               <div
                 className={`product-card ${activeProductId === product.id ? 'active' : ''}`}
@@ -120,7 +120,7 @@ const Product = ({Data}) => {
                   <div className="product-description-wrapper">
                     <div className="scroll-bar"></div>
                     <div className="product-details-content">
-                      <p className="product-detail-text">{product?.description}</p>
+                      <p className="product-detail-text" dangerouslySetInnerHTML={{ __html: product?.description }} />
                     </div>
                   </div>
                 )}
