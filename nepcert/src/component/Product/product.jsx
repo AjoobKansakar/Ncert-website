@@ -7,13 +7,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // icons 
-import OnlineFileServerIcon from '../../assets/OnlineFileServer_icon.svg';
-import OnlineRecordManagementSystemIcon from '../../assets/Record_icon.svg';
-import EkagajSystemIcon from '../../assets/ekagaj_icon.svg';
-import MIMSIcon from '../../assets/MIMS_icon.svg';
-import DataEntryIcon from '../../assets/DataEntry_icon.svg';
-import BillPayIcon from '../../assets/Bill_icon.svg';
-import RightArrowIcon from '../../assets/arrow_icon.svg';
+// import OnlineFileServerIcon from '../../assets/OnlineFileServer_icon.svg';
+// import OnlineRecordManagementSystemIcon from '../../assets/Record_icon.svg';
+// import EkagajSystemIcon from '../../assets/ekagaj_icon.svg';
+// import MIMSIcon from '../../assets/MIMS_icon.svg';
+// import DataEntryIcon from '../../assets/DataEntry_icon.svg';
+// import BillPayIcon from '../../assets/Bill_icon.svg';
+// import RightArrowIcon from '../../assets/arrow_icon.svg';
 
 // const products = [
 //     {
