@@ -15,70 +15,72 @@ import DataEntryIcon from '../../assets/DataEntry_icon.svg';
 import BillPayIcon from '../../assets/Bill_icon.svg';
 import RightArrowIcon from '../../assets/arrow_icon.svg';
 
-const products = [
-    {
-        id: 1,
-        title: "Online File Server",
-        icon: OnlineFileServerIcon,
-        details: [
-            { type: 'text', content: "It is used to store, manage and track electronic documents, This module has features like:"},
-            { type: 'icon', icon: RightArrowIcon, content: "User Management" },
-            { type: 'icon', icon: RightArrowIcon, content: "Group Management" },
-            { type: 'icon', icon: RightArrowIcon, content: "Content and Metadata Search" },
-            { type: 'icon', icon: RightArrowIcon, content: "Version Management" },
-            { type: 'icon', icon: RightArrowIcon, content: "Access control " },
-            { type: 'icon', icon: RightArrowIcon, content: "User Management" }
-        ]
-    },
-    {
-        id:2,
-        title: "Online Record Management System",
-        icon: OnlineRecordManagementSystemIcon,
-        details: [
-            { type: 'text', content: "It allows user to access System from ANYWHERE, ANYTIME with an internet connection. It transforms paper documents to electronic document which can be viewed, edited, searched and distributed. It is used to track and store images of paper documents with reporting features. It provides storage, security, indexing and quick retrival capabilities. It provides means for inexpensive concurrent access to electronics copies of records currently stored as paper."}
-        ]
-    },
-    {
-        id:3,
-        title: "Ekagaj System",
-        icon: EkagajSystemIcon,
-        details: [
-            { type: 'text', content: "It is a browser based, an imaging and Document Management System, a product designed, developed and maintained by Nep Cert Private limited is used to track and store images of paper document. It provides storage, security, as well as indexing and retrival capabilities. It is an Online imaging and Document Management System which allows user to access system from ANYWHERE, ANYTIME with an internet connection. ekagaj, an imaging and Document Management System scans and indexes your paper work comprehensively and brings savings in storage space and costs. Instead of searching for that stray documents, ekagaj enables you to retrive it on your PC and then view, edit and annotate it."}
-        ]
-    },
-    {
-        id:4,
-        title: "Mirco Insurance Management System (MIMS)",
-        icon: MIMSIcon,
-        details: [
-            { type: 'text', content: "(MIMS) is product designed and developed by Nep Cert Private Limited to manage the Mirco Insurance System. It has capability to manage:"},
-            { type: 'icon', icon: RightArrowIcon, content: "Generic application"},
-            { type: 'icon', icon: RightArrowIcon, content: "Mirco Insurance products and their benefit packages"},
-            { type: 'icon', icon: RightArrowIcon, content: "Members and dependents/beneficiaries"},
-            { type: 'icon', icon: RightArrowIcon, content: " Various process like enrolments, collections, entitlement, to benefits, claims settlement, management of cash flows etc."}
-        ]
-    },
-    {
-        id:5,
-        title: "Data Entry and Digitization",
-        icon: DataEntryIcon,
-        details: [
-            { type: 'text', content: "Nep Cert has been carrying out data entry and imaging service for various organizations with hardware and man power for Global IME Bank, Laxmi Sunrise Bank Limited, American Life Insurance Company."
-        },
-        ]
-    },
-    {
-        id:6,
-        title: "Bill Payment System",
-        icon: BillPayIcon,
-        details: [
-            { type: 'text', content: " Nep Cert Private Limited has managed to maintain the billing system for Nepal Telecom for past 9 years. A group of Staffs are dedicated for all the electricity bill generated for the Mobile BTS tower of Bagmati zone and periphery including remote regions are managed, paid and recorded in the Bill Payment System developed."
-        }
-        ]
-    }
-];
+// const products = [
+//     {
+//         id: 1,
+//         title: "Online File Server",
+//         icon: OnlineFileServerIcon,
+//         details: [
+//             { type: 'text', content: "It is used to store, manage and track electronic documents, This module has features like:"},
+//             { type: 'icon', icon: RightArrowIcon, content: "User Management" },
+//             { type: 'icon', icon: RightArrowIcon, content: "Group Management" },
+//             { type: 'icon', icon: RightArrowIcon, content: "Content and Metadata Search" },
+//             { type: 'icon', icon: RightArrowIcon, content: "Version Management" },
+//             { type: 'icon', icon: RightArrowIcon, content: "Access control " },
+//             { type: 'icon', icon: RightArrowIcon, content: "User Management" }
+//         ]
+//     },
+//     {
+//         id:2,
+//         title: "Online Record Management System",
+//         icon: OnlineRecordManagementSystemIcon,
+//         details: [
+//             { type: 'text', content: "It allows user to access System from ANYWHERE, ANYTIME with an internet connection. It transforms paper documents to electronic document which can be viewed, edited, searched and distributed. It is used to track and store images of paper documents with reporting features. It provides storage, security, indexing and quick retrival capabilities. It provides means for inexpensive concurrent access to electronics copies of records currently stored as paper."}
+//         ]
+//     },
+//     {
+//         id:3,
+//         title: "Ekagaj System",
+//         icon: EkagajSystemIcon,
+//         details: [
+//             { type: 'text', content: "It is a browser based, an imaging and Document Management System, a product designed, developed and maintained by Nep Cert Private limited is used to track and store images of paper document. It provides storage, security, as well as indexing and retrival capabilities. It is an Online imaging and Document Management System which allows user to access system from ANYWHERE, ANYTIME with an internet connection. ekagaj, an imaging and Document Management System scans and indexes your paper work comprehensively and brings savings in storage space and costs. Instead of searching for that stray documents, ekagaj enables you to retrive it on your PC and then view, edit and annotate it."}
+//         ]
+//     },
+//     {
+//         id:4,
+//         title: "Mirco Insurance Management System (MIMS)",
+//         icon: MIMSIcon,
+//         details: [
+//             { type: 'text', content: "(MIMS) is product designed and developed by Nep Cert Private Limited to manage the Mirco Insurance System. It has capability to manage:"},
+//             { type: 'icon', icon: RightArrowIcon, content: "Generic application"},
+//             { type: 'icon', icon: RightArrowIcon, content: "Mirco Insurance products and their benefit packages"},
+//             { type: 'icon', icon: RightArrowIcon, content: "Members and dependents/beneficiaries"},
+//             { type: 'icon', icon: RightArrowIcon, content: " Various process like enrolments, collections, entitlement, to benefits, claims settlement, management of cash flows etc."}
+//         ]
+//     },
+//     {
+//         id:5,
+//         title: "Data Entry and Digitization",
+//         icon: DataEntryIcon,
+//         details: [
+//             { type: 'text', content: "Nep Cert has been carrying out data entry and imaging service for various organizations with hardware and man power for Global IME Bank, Laxmi Sunrise Bank Limited, American Life Insurance Company."
+//         },
+//         ]
+//     },
+//     {
+//         id:6,
+//         title: "Bill Payment System",
+//         icon: BillPayIcon,
+//         details: [
+//             { type: 'text', content: " Nep Cert Private Limited has managed to maintain the billing system for Nepal Telecom for past 9 years. A group of Staffs are dedicated for all the electricity bill generated for the Mobile BTS tower of Bagmati zone and periphery including remote regions are managed, paid and recorded in the Bill Payment System developed."
+//         }
+//         ]
+//     }
+// ];
 
-const Product = () => {
+const Product = ({Data}) => {
+  // checking products in console
+  console.log("Products",Data);
   const [activeProductId, setActiveProductId] = useState(null);
 
   const handleCardClick = (id) => {
@@ -106,34 +108,19 @@ const Product = () => {
             300: { slidesPerView: 1 }
           }}
         >
-          {products.map(product => (
+          {Data?.en?.map(product => (
             <SwiperSlide key={product.id}>
               <div
                 className={`product-card ${activeProductId === product.id ? 'active' : ''}`}
                 onClick={() => handleCardClick(product.id)}
               >
-                <img src={product.icon} alt={product.title} className="product-icons" />
+                <img src={product.image} alt={product.title} className="product-icons" />
                 <h3>{product.title}</h3>
                 {activeProductId === product.id && (
                   <div className="product-description-wrapper">
                     <div className="scroll-bar"></div>
                     <div className="product-details-content">
-                      {product.details.map((item, index) => (
-                        <React.Fragment key={index}>
-                          {item.type === 'text' && (
-                            <p className="product-detail-text">{item.content}</p>
-                          )}
-                          {item.type === 'icon' && (
-                            <div className="product-detail-item">
-                              <img src={item.icon} alt="arrow" className="product-detail-icon" />
-                              <p className="product-detail-content">{item.content}</p>
-                            </div>
-                          )}
-                        </React.Fragment>
-                      ))}
-                      {(product.details.length === 0 || (product.details.length === 1 && product.details[0].content === "")) && (
-                        <p className="product-detail-text">No description available.</p>
-                      )}
+                      <p className="product-detail-text">{product?.description}</p>
                     </div>
                   </div>
                 )}
