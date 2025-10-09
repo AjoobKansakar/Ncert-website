@@ -50,13 +50,13 @@ function App() {
       <Hero Data={data?.banners}  />
 
     {/* Aboutus section */}
-      <Aboutus Data={data?.about} />
+      <Aboutus Data={data?.about?.en} />
 
     {/* Why choose us section */}
       <Wcu Data={''} />
 
     {/* Product section */}
-      <Product Data={data?.products} />
+      <Product Data={data?.products?.en} />
 
     {/* Our Services section */}
      <Services Data={data?.services} />
