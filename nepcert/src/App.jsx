@@ -59,7 +59,7 @@ function App() {
       <Product Data={data?.products?.en} />
 
     {/* Our Services section */}
-     <Services Data={data?.services} />
+     <Services Data={data?.services?.en} />
 
     {/*  Mission Statement section */}
       <Mission Data={''} />
