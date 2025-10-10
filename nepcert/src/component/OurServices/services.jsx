@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './services.css';
 // icons
-import DataEntryIcon from '../../assets/DataEntry_icon.svg';
-import BillPayIcon from '../../assets/Bill_icon.svg';
+// import DataEntryIcon from '../../assets/DataEntry_icon.svg';
+// import BillPayIcon from '../../assets/Bill_icon.svg';
 
 
 function Services ({Data}) {
