@@ -120,6 +120,7 @@ const Product = ({Data}) => {
                   <div className="product-description-wrapper">
                     <div className="scroll-bar"></div>
                     <div className="product-details-content">
+                      {/* dangerouslySetInnerHTML used to remove **<p></p>** from the box */}
                       <p className="product-detail-text" dangerouslySetInnerHTML={{ __html: product?.description }} />
                     </div>
                   </div>
