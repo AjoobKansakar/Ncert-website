@@ -62,13 +62,13 @@ function App() {
      <Services Data={data?.services?.en} />
 
     {/*  Mission Statement section */}
-      <Mission Data={''} />
+      <Mission Data={data?.mission} />
 
     {/* Client Section */}
      <Clients Data={''} />
 
     {/* Contact Us Section */}
-      <ContactUs Data={''} />
+      <ContactUs/>
 
     {/* Footer */}
       <Footer/>
