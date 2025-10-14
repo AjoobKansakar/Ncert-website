@@ -1,8 +1,8 @@
 import React from 'react';
 import './Mission.css';
 import MissionBgImg from '../../assets/MissionStatement_img.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 // const missionPoints = [
 //     {
