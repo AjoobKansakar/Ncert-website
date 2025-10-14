@@ -34,6 +34,9 @@ const ContactUs = () => {
 
       if (data.status?.toLowerCase() === "success") {
         toast.success("Your message was successfully sent.");
+        setTimeout(() => {
+          window.location.reload(); 
+        }, 1500);
       } else {
         toast.error(data.status_message || "Something went wrong.");
       }
