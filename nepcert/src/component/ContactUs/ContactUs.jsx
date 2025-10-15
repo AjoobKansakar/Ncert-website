@@ -13,6 +13,7 @@ const ContactUs = () => {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
+    reset,
   } = useForm({
     defaultValues: {
       fullname: "",
@@ -34,9 +35,8 @@ const ContactUs = () => {
 
       if (data.status?.toLowerCase() === "success") {
         toast.success("Your message was successfully sent.");
-        setTimeout(() => {
-          window.location.reload(); 
-        }, 1500);
+
+        reset();
       } else {
         toast.error(data.status_message || "Something went wrong.");
       }
@@ -98,10 +98,7 @@ const ContactUs = () => {
             {/* Contact Form */}
             <div className="contact-us-form">
               <h2>Send us a message:</h2>
-              <form
-                className="contact-form"
-                onSubmit={handleSubmit(onSubmit)}
-              >
+              <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">
                   <input
                     type="text"
@@ -142,7 +139,7 @@ const ContactUs = () => {
                   disabled={isSubmitting || formLoading}
                   className="contactSubmitButton"
                 >
-                  {formLoading && <ClipLoader size={20} color="#fff" />}
+                  {formLoading && <ClipLoader size={20} color="#fff" margin="10px"/>}
                   Send
                 </button>
               </form>
